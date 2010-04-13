@@ -1,47 +1,47 @@
-INSTALA��O 
+INSTALAÇÃO
   
   Windows
-  
+	Baixar pacote RxTxWindows em http://code.google.com/p/ecf4j/downloads e o descompacte  
     Copie ecf4j.jar para \jre\lib\ext (na pasta java) 
     Copie rxtxSerial.dll e rxtxParallel.dll para \jre\bin
     
   Linux
-	
+	Baixar pacote RxTxLinux em http://code.google.com/p/ecf4j/downloads e o descompacte
   	Copiar ecf4j.jar para /jre/lib/ext/ (na pasta java)
   	Copie rxtxSerial.so e rxtxParallel.so /jre/lib/i386
-  	Verifique os direitos dos usu�rios sobre a pasta    
+  	Verifique os direitos dos usuários sobre a pasta    
   
   Solaris
-  	
+  	Baixar pacote RxTxSolaris em http://code.google.com/p/ecf4j/downloads e o descompacte
   	Copiar ecf4j.jar para /jre/lib/ext/ (na pasta java)
   	Copiar rxtxSerial.so e rxtxParallel.so /jre/lib/(...)
-  	Verifique os direitos dos usu�rios sobre a pasta
+  	Verifique os direitos dos usuários sobre a pasta
   
   
 DESENVOLVIMENTO
 
 Para contribuir com o projeto Ecf4j.org algumas regras devem ser seguidas para que o 
-c�digo-fonte se mantenha compreens�vel a todos os desenvolvedores que contriburem posteriormente 
+código-fonte se mantenha compreensível a todos os desenvolvedores que contriburem posteriormente 
 ao projeto.
 
-  - Implementa��o de um novo equipamento
+  - Implementação de um novo equipamento
 
   	* Classes controladoras
   	Ao implementar um novo equipamento, deve-se criar sua classe controladora no pacote "org.ecf4j"
-  	com o nome do equipamento. Nessas classes devem haver as chamadas para os m�todos espec�ficos.
-  	Exemplos disso s�o: "Ecf.java", "Ecnf.java", "Balanca.java".
+  	com o nome do equipamento. Nessas classes devem haver as chamadas para os métodos específicos.
+  	Exemplos disso são: "Ecf.java", "Ecnf.java", "Balanca.java".
   
   	* Pacote do equipamento
-  	Al�m da classe controladora � necess�rio tamb�m criar um pacote dentro do pacote "org.ecf4j" 
-  	tamb�m com o nome do equipamento a implementar mais "Abstract", exemplo: "EcfAbstract". Dentro 
-  	desse pacote �, por padr�o, necess�rio criar uma classe abstrata com todos os m�todos necess�rios 
-  	para o funcionamento do equipamento. Caso o m�todo funcione perfeitamente independente de modelo
-  	e/ou marca do equipamento, o mesmo deve ser implementado na classe abstrata, caso contr�rio esse 
-  	m�todo deve ser abstrato e implementado nas classes espec�ficas de modelos. Nesse pacote tamb�m 
+  	Além da classe controladora é necessário também criar um pacote dentro do pacote "org.ecf4j" 
+  	também com o nome do equipamento a implementar mais "Abstract", exemplo: "EcfAbstract". Dentro 
+  	desse pacote é, por padrão, necessário criar uma classe abstrata com todos os métodos necessários 
+  	para o funcionamento do equipamento. Caso o método funcione perfeitamente independente de modelo
+  	e/ou marca do equipamento, o mesmo deve ser implementado na classe abstrata, caso contrário esse 
+  	método deve ser abstrato e implementado nas classes específicas de modelos. Nesse pacote também 
   	deve ser criado um pacote com o nome "excptions" que deve conter uma classe de nome 
-  	"NomeDoEquipamento"+"Exception", com as mensagens de exce��o do equipamento.
+  	"NomeDoEquipamento"+"Exception", com as mensagens de exceção do equipamento.
   	
-  	* Pacotes com as classes e m�todos especif�cos
+  	* Pacotes com as classes e métodos especifícos
   	Dentro do pacote do equipamento deve-se criar os pacotes das marcas dos equipamentos 
   	
   	
