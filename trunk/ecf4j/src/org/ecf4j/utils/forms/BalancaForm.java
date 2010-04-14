@@ -35,7 +35,7 @@ public class BalancaForm extends JFrame {
 	 */
 	private void initialize() {
         this.setSize(new Dimension(356, 76));
-        this.setTitle("Balança");
+        this.setTitle("BalanÃ§a");
         this.setDefaultCloseOperation(WindowConstants.DO_NOTHING_ON_CLOSE);
         this.setContentPane(getJPanel());
 			
