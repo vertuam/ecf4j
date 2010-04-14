@@ -1,30 +1,30 @@
 /**
- * Ecf4J - framework Java para interaÁ„o com equipamentos de AutomaÁ„o Comercial 
+ * Ecf4J - framework Java para intera√ß√£o com equipamentos de Automa√ß√£o Comercial 
  * 
  * Direitos Autorais Reservados (c) 2009-2010 ecf4j.org
  *
- * Autores: Agner GerÙnimo Munhoz, 
+ * Autores: Agner Ger√¥nimo Munhoz, 
  *          Pablo Henrique Fassina, 
  *          Rafael Pasqualini de Freitas,
  *          Wellington Carvalho
  *
- * VocÍ pode obter a ˙ltima vers„o desse arquivo na pagina do Ecf4J.org
- * disponÌvel em: <http://www.ecf4j.org> 21/09/2009.
+ * Voc√™ pode obter a √∫ltima vers√£o desse arquivo na pagina do Ecf4J.org
+ * dispon√≠vel em: <http://www.ecf4j.org> 21/09/2009.
  *
- * Este arquivo È parte da framework Ecf4J
+ * Este arquivo √© parte da framework Ecf4J
  *
- * Ecf4J È um framework livre; vocÍ pode redistribui-lo e/ou 
- * modifica-lo dentro dos termos da LicenÁa P˙blica Geral Menor GNU como 
- * publicada pela FundaÁ„o do Software Livre (FSF); na vers„o 2.1 da 
- * LicenÁa.
+ * Ecf4J √© um framework livre; voc√™ pode redistribui-lo e/ou 
+ * modifica-lo dentro dos termos da Licen√ßa P√∫blica Geral Menor GNU como 
+ * publicada pela Funda√ß√£o do Software Livre (FSF); na vers√£o 2.1 da 
+ * Licen√ßa.
  *
- * Este framework È distribuido na esperanÁa que possa ser  util, 
- * mas SEM NENHUMA GARANTIA; sem uma garantia implicita de ADEQUA«¬O a qualquer
- * MERCADO ou APLICA«√O EM PARTICULAR. Veja a
- * LicenÁa P˙blica Geral GNU para maiores detalhes.
+ * Este framework √© distribuido na esperan√ßa que possa ser  util, 
+ * mas SEM NENHUMA GARANTIA; sem uma garantia implicita de ADEQUA√á√ÇO a qualquer
+ * MERCADO ou APLICA√á√ÉO EM PARTICULAR. Veja a
+ * Licen√ßa P√∫blica Geral GNU para maiores detalhes.
  *
- * VocÍ deve ter recebido uma cÛpia da LicenÁa P˙blica Geral Menor GNU
- * junto com este framework, se n„o, escreva para a FundaÁ„o do Software
+ * Voc√™ deve ter recebido uma c√≥pia da Licen√ßa P√∫blica Geral Menor GNU
+ * junto com este framework, se n√£o, escreva para a Funda√ß√£o do Software
  * Livre(FSF) Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  */
 package org.ecf4j;
@@ -46,11 +46,11 @@ public class Ecnf {
 	private EcnfAbstract ecnf = null;
 
 	/**
-	 * MÈtodo inicializa comunicaÁ„o com ECNF
+	 * M√©todo inicializa comunica√ß√£o com ECNF
 	 * @param codigo <i>String</i>
 	 * @param porta <i>String</i>
-	 * @throws EcnfException ExceÁ„o do ECNF
-	 * @throws CommException ExceÁ„o do comunicaÁ„o
+	 * @throws EcnfException Exce√ß√£o do ECNF
+	 * @throws CommException Exce√ß√£o do comunica√ß√£o
 	 */
 	public void inicilizar(String codigo, String porta) throws EcnfException, CommException{
 		try{
@@ -63,7 +63,7 @@ public class Ecnf {
 	}
 	
 	/**
-	 * MÈtodo finaliza comunicaÁ„o com ECNF
+	 * M√©todo finaliza comunica√ß√£o com ECNF
 	 */
 	public void finalizar(){
 		ecnf.finalizar();
@@ -71,8 +71,8 @@ public class Ecnf {
 	}
 	
 	/**
-	 * MÈtodo carrega configuraÁıes do cupom
-	 * @throws EcnfException ExceÁ„o do ECNF
+	 * M√©todo carrega configura√ß√µes do cupom
+	 * @throws EcnfException Exce√ß√£o do ECNF
 	 */
 	public void carregarCupomConfig() throws EcnfException{
 		try {
@@ -83,9 +83,9 @@ public class Ecnf {
 	}
 	
 	/**
-	 * MÈtodo carrega as configuraÁıes do cupom a partir de um XML
+	 * M√©todo carrega as configura√ß√µes do cupom a partir de um XML
 	 * @param xml <i>String</i>
-	 * @throws EcnfException ExceÁ„o do ECNF
+	 * @throws EcnfException Exce√ß√£o do ECNF
 	 */
 	public void carregarCupomConfig(String xml) throws EcnfException{
 		try {
@@ -96,9 +96,9 @@ public class Ecnf {
 	}
 	
 	/**
-	 * MÈtodo retorna o alinhamento utilizado
+	 * M√©todo retorna o alinhamento utilizado
 	 * @return alinhamento
-	 * @throws EcnfException ExceÁ„o do ECNF
+	 * @throws EcnfException Exce√ß√£o do ECNF
 	 */
 	public int getAlinhamento() throws EcnfException {
 		try {
@@ -109,9 +109,9 @@ public class Ecnf {
 	}
 
 	/**
-	 * MÈtodo seta um novo alinhamento a ser utilizado pela ECNF
+	 * M√©todo seta um novo alinhamento a ser utilizado pela ECNF
 	 * @param alinhamento <i>int</i>
-	 * @throws EcnfException ExceÁ„o do ECNF
+	 * @throws EcnfException Exce√ß√£o do ECNF
 	 */
 	public void setAlinhamento(int alinhamento) throws EcnfException {
 		try {
@@ -122,11 +122,11 @@ public class Ecnf {
 	}
 
 	/**
-	 * MÈtodo verifica se texto a ser impresso ser· sublinhado
+	 * M√©todo verifica se texto a ser impresso ser√° sublinhado
 	 * @return boolean
 	 * <li> True - Caso esteja sublinhado
-	 * <li> False - Caso n„o esteja sublinhado
-	 * @throws EcnfException ExceÁ„o do ECNF
+	 * <li> False - Caso n√£o esteja sublinhado
+	 * @throws EcnfException Exce√ß√£o do ECNF
 	 */
 	public boolean isSublinhado() throws EcnfException {
 		try {
@@ -137,9 +137,9 @@ public class Ecnf {
 	}
 
 	/**
-	 * MÈtodo seta se o texto a ser impresso ser· sublinhado ou n„o
+	 * M√©todo seta se o texto a ser impresso ser√° sublinhado ou n√£o
 	 * @param sublinhado <i>boolean</i>
-	 * @throws EcnfException ExceÁ„o do ECNF
+	 * @throws EcnfException Exce√ß√£o do ECNF
 	 */
 	public void setSublinhado(boolean sublinhado) throws EcnfException {
 		try {
@@ -150,11 +150,11 @@ public class Ecnf {
 	}
 
 	/**
-	 * MÈtodo verifica se texto a ser impresso ser· it·lico
+	 * M√©todo verifica se texto a ser impresso ser√° it√°lico
 	 * @return boolean
-	 * <li> True - Caso esteja it·lico
-	 * <li> False - Caso n„o esteja it·lico
-	 * @throws EcnfException ExceÁ„o do ECNF
+	 * <li> True - Caso esteja it√°lico
+	 * <li> False - Caso n√£o esteja it√°lico
+	 * @throws EcnfException Exce√ß√£o do ECNF
 	 */
 	public boolean isItalico() throws EcnfException {
 		try {
@@ -165,9 +165,9 @@ public class Ecnf {
 	}
 
 	/**
-	 *  MÈtodo seta se o texto a ser impresso ser· it·lico ou n„o
+	 *  M√©todo seta se o texto a ser impresso ser√° it√°lico ou n√£o
 	 * @param italico <i>boolean</i>
-	 * @throws EcnfException ExceÁ„o do ECNF
+	 * @throws EcnfException Exce√ß√£o do ECNF
 	 */
 	public void setItalico(boolean italico) throws EcnfException {
 		try {
@@ -178,11 +178,11 @@ public class Ecnf {
 	}
 
 	/**
-	 * MÈtodo verifica se texto a ser impresso ser· negrito
+	 * M√©todo verifica se texto a ser impresso ser√° negrito
 	 * @return boolean
 	 * <li> True - Caso esteja negrito
-	 * <li> False - Caso n„o esteja negrito
-	 * @throws EcnfException ExceÁ„o do ECNF
+	 * <li> False - Caso n√£o esteja negrito
+	 * @throws EcnfException Exce√ß√£o do ECNF
 	 */
 	public boolean isNegrito() throws EcnfException {
 		try {
@@ -193,9 +193,9 @@ public class Ecnf {
 	}
 
 	/**
-	 *  MÈtodo seta se o texto a ser impresso ser· negrito ou n„o
+	 *  M√©todo seta se o texto a ser impresso ser√° negrito ou n√£o
 	 * @param negrito <i>boolean</i>
-	 * @throws EcnfException ExceÁ„o do ECNF
+	 * @throws EcnfException Exce√ß√£o do ECNF
 	 */
 	public void setNegrito(boolean negrito) throws EcnfException {
 		try {
@@ -206,8 +206,8 @@ public class Ecnf {
 	}
 
 	/**
-	 * MÈtodo forÁa a ativaÁ„o do modo it·lico
-	 * @throws EcnfException ExceÁ„o do ECNF
+	 * M√©todo for√ßa a ativa√ß√£o do modo it√°lico
+	 * @throws EcnfException Exce√ß√£o do ECNF
 	 */
 	public void ativarItalico() throws EcnfException{
 		try {
@@ -218,8 +218,8 @@ public class Ecnf {
 	}
 	
 	/**
-	 * MÈtodo forÁa a desativaÁ„o do modo it·lico
-	 * @throws EcnfException ExceÁ„o do ECNF
+	 * M√©todo for√ßa a desativa√ß√£o do modo it√°lico
+	 * @throws EcnfException Exce√ß√£o do ECNF
 	 */
 	public void desativarItalico() throws EcnfException{
 		try {
@@ -230,8 +230,8 @@ public class Ecnf {
 	}
 	
 	/**
-	 * MÈtodo forÁa a ativaÁ„o do modo sublinhado
-	 * @throws EcnfException ExceÁ„o do ECNF
+	 * M√©todo for√ßa a ativa√ß√£o do modo sublinhado
+	 * @throws EcnfException Exce√ß√£o do ECNF
 	 */
 	public void ativarSublinhado() throws EcnfException{
 		try {
@@ -242,8 +242,8 @@ public class Ecnf {
 	}
 	
 	/**
-	 * MÈtodo forÁa a desativaÁ„o do modo sublinhado
-	 * @throws EcnfException ExceÁ„o do ECNF
+	 * M√©todo for√ßa a desativa√ß√£o do modo sublinhado
+	 * @throws EcnfException Exce√ß√£o do ECNF
 	 */
 	public void desativarSublinhado() throws EcnfException{
 		try {
@@ -254,8 +254,8 @@ public class Ecnf {
 	}
 	
 	/**
-	 * MÈtodo forÁa a ativaÁ„o do modo negrito
-	 * @throws EcnfException ExceÁ„o do ECNF
+	 * M√©todo for√ßa a ativa√ß√£o do modo negrito
+	 * @throws EcnfException Exce√ß√£o do ECNF
 	 */
 	public void ativarNegrito() throws EcnfException{
 		try {
@@ -266,8 +266,8 @@ public class Ecnf {
 	}
 	
 	/**
-	 * MÈtodo forÁa a desativaÁ„o do modo negrito
-	 * @throws EcnfException ExceÁ„o do ECNF
+	 * M√©todo for√ßa a desativa√ß√£o do modo negrito
+	 * @throws EcnfException Exce√ß√£o do ECNF
 	 */
 	public void desativarNegrito() throws EcnfException{
 		try {
@@ -278,10 +278,10 @@ public class Ecnf {
 	}
 	
 	/**
-	 * MÈtodo imprime uma linha no modo expandido
+	 * M√©todo imprime uma linha no modo expandido
 	 * @param linha <i>String</i>
-	 * @throws CommException ExceÁ„o de comunicaÁ„o
-	 * @throws EcnfException ExceÁ„o do ECNF
+	 * @throws CommException Exce√ß√£o de comunica√ß√£o
+	 * @throws EcnfException Exce√ß√£o do ECNF
 	 */
 	public void imprimirLinhaExpandida(String linha) throws CommException, EcnfException{
 		try {
@@ -292,10 +292,10 @@ public class Ecnf {
 	}
 	
 	/**
-	 * MÈtodo imprime uma linha no modo condensado
+	 * M√©todo imprime uma linha no modo condensado
 	 * @param linha <i>String</i>
-	 * @throws CommException ExceÁ„o de comunicaÁ„o
-	 * @throws EcnfException ExceÁ„o do ECNF
+	 * @throws CommException Exce√ß√£o de comunica√ß√£o
+	 * @throws EcnfException Exce√ß√£o do ECNF
 	 */
 	public void imprimirLinhaCondensada(String linha) throws CommException, EcnfException{
 		try {
@@ -306,10 +306,10 @@ public class Ecnf {
 	}
 	
 	/**
-	 * MÈtodo imprime uma linha
+	 * M√©todo imprime uma linha
 	 * @param linha <i>String</i>
-	 * @throws CommException ExceÁ„o de comunicaÁ„o
-	 * @throws EcnfException ExceÁ„o do ECNF
+	 * @throws CommException Exce√ß√£o de comunica√ß√£o
+	 * @throws EcnfException Exce√ß√£o do ECNF
 	 */
 	public void imprimirLinha(String linha) throws CommException, EcnfException{
 		try {
@@ -320,9 +320,9 @@ public class Ecnf {
 	}
 	
 	/**
-	 * MÈtodo imprime cabeÁalho do cupom
-	 * @throws CommException ExceÁ„o de comunicaÁ„o
-	 * @throws EcnfException ExceÁ„o do ECNF
+	 * M√©todo imprime cabe√ßalho do cupom
+	 * @throws CommException Exce√ß√£o de comunica√ß√£o
+	 * @throws EcnfException Exce√ß√£o do ECNF
 	 */
 	public void imprimirCabecalho() throws CommException, EcnfException {
 		try {
@@ -333,9 +333,9 @@ public class Ecnf {
 	}
 
 	/**
-	 * MÈtodo imprime rodapÈ do cupom
-	 * @throws CommException ExceÁ„o de comunicaÁ„o
-	 * @throws EcnfException ExceÁ„o do ECNF
+	 * M√©todo imprime rodap√© do cupom
+	 * @throws CommException Exce√ß√£o de comunica√ß√£o
+	 * @throws EcnfException Exce√ß√£o do ECNF
 	 */
 	public void imprimirRodape() throws CommException, EcnfException{
 		try {
@@ -346,19 +346,36 @@ public class Ecnf {
 	}
 
 	/**
-	 * MÈtodo pula linhas nas impress„o do ECNF
+	 * M√©todo pula linhas nas impress√£o do ECNF
 	 * @param numLinhas <i>int</i>
-	 * @throws CommException ExceÁ„o de comunicaÁ„o
-	 * @throws EcnfException ExceÁ„o do ECNF
+	 * @throws CommException Exce√ß√£o de comunica√ß√£o
+	 * @throws EcnfException Exce√ß√£o do ECNF
 	 */
 	public void avancarLinhas() throws CommException{
 		ecnf.avancarLinhas();
 	}
 	
+	/**
+	 * M√©todo alinha item de forma a ocupar toda a linha
+	 * @param str1 <i>String</i>
+	 * @param str2 <i>String</i>
+	 * @param dif <i>int</i>
+	 * @return retorna o item alinhado
+	 */
 	public String alinhaItem(String str1, String str2, int dif){
 		return ecnf.alinhaItem(str1, str2, dif);
 	}
 	
+	/**
+	 * M√©todo imprime um item do cupom
+	 * @param numItem <i>int</i>
+	 * @param codProduto <i>String</i>
+	 * @param descProduto <i>String</i>
+	 * @param un <i>String</i>
+	 * @param qtdeItem <i>BigDecimal</i>
+	 * @param valorItem <i>BIgDecimal</i>
+	 * @throws EcnfException Exce√ß√£o do ECNF
+	 */
 	public void imprimirItem(int numItem, String codProduto, String descProduto, 
 			String un, BigDecimal qtdeItem, BigDecimal valorItem) throws EcnfException{
 		try {
@@ -368,6 +385,13 @@ public class Ecnf {
 		}
 	}
 	
+	/**
+	 * M√©todo imprime uma linha no modo Normal
+	 * @param str1 <i>String</i>
+	 * @param str2 <i>String</i>
+	 * @throws EcnfException Exce√ß√£o do ECNF
+	 * @throws CommException Exce√ß√£o de comunica√ß√£o
+	 */
 	public void imprimirLinha(String str1, String str2)throws EcnfException, CommException{
 		try {
 			ecnf.imprimirLinha(str1, str2);
@@ -376,6 +400,13 @@ public class Ecnf {
 		}
 	}
 
+	/**
+	 * M√©todo imprime uma linha no modo expandido
+	 * @param str1 <i>String</i>
+	 * @param str2 <i>String</i>
+	 * @throws EcnfException Exce√ß√£o do ECNF
+	 * @throws CommException Exce√ß√£o de comunica√ß√£o
+	 */
 	public void imprimirLinhaExpandida(String str1, String str2)throws EcnfException, CommException{
 		try {
 			ecnf.imprimirLinhaExpandida(str1, str2);
@@ -384,10 +415,20 @@ public class Ecnf {
 		}
 	}
 	
+	/**
+	 * M√©todo imprime uma linha tracejada
+	 * @throws CommException Exce√ß√£o de comunica√ß√£o
+	 */
 	public void imprimirSeparador() throws CommException{
 		ecnf.imprimirSeparador();
 	}
 	
+	/**
+	 * M√©todo pula determinada quantidade de linhas
+	 * @param numLinhas <i>int</i>
+	 * @throws CommException Exce√ß√£o do Ecnf
+	 * @throws EcnfException Exce√ß√£o de comunica√ß√£o
+	 */
 	public void pularLinha(int numLinhas) throws CommException, EcnfException{
 		try {
 			ecnf.pularLinha(numLinhas);
@@ -397,7 +438,7 @@ public class Ecnf {
 	}
 	
 	/**
-	 * MÈtodo verifica se a porta serial/paralela est· habilitada
+	 * M√©todo verifica se a porta serial/paralela est√° habilitada
 	 * @return boolean 
 	 * <li> True - Porta habilitada
 	 * <li> False - Porta desabilitada
@@ -412,9 +453,9 @@ public class Ecnf {
 	}
 	
 	/**
-	 * MÈtodo busca o fabricante do ECNF
+	 * M√©todo busca o fabricante do ECNF
 	 * @return fabricante
-	 * @throws EcnfException ExceÁ„o do ECNF
+	 * @throws EcnfException Exce√ß√£o do ECNF
 	 */
 	public String fabricante() throws EcnfException{
 		try {
@@ -425,9 +466,9 @@ public class Ecnf {
 	}
 	
 	/**
-	 * MÈtodo busca o modelo do ECNF
+	 * M√©todo busca o modelo do ECNF
 	 * @return modelo
-	 * @throws EcnfException ExceÁ„o do ECNF
+	 * @throws EcnfException Exce√ß√£o do ECNF
 	 */
 	public String modelo() throws EcnfException{
 		try {
@@ -438,10 +479,10 @@ public class Ecnf {
 	}
 	
 	/**
-	 * MÈtodo imprime codigos de barras modelo EAN13
+	 * M√©todo imprime codigos de barras modelo EAN13
 	 * @param ean <i>String</i>
-	 * @throws CommException ExceÁ„o de comunicaÁ„o
-	 * @throws EcnfException ExceÁ„o do ECNF
+	 * @throws CommException Exce√ß√£o de comunica√ß√£o
+	 * @throws EcnfException Exce√ß√£o do ECNF
 	 */
 	public void imprimirEan13(String ean) throws CommException, EcnfException{
 		try {
@@ -452,10 +493,10 @@ public class Ecnf {
 	}
 	
 	/**
-	 * MÈtodo imprime codigos de barras modelo EAN8
+	 * M√©todo imprime codigos de barras modelo EAN8
 	 * @param ean <i>String</i>
-	 * @throws CommException ExceÁ„o de comunicaÁ„o
-	 * @throws EcnfException ExceÁ„o do ECNF
+	 * @throws CommException Exce√ß√£o de comunica√ß√£o
+	 * @throws EcnfException Exce√ß√£o do ECNF
 	 */
 	public void imprimirEan8(String ean) throws CommException, EcnfException{
 		try {
@@ -466,9 +507,9 @@ public class Ecnf {
 	}
 	
 	/**
-	 * MÈtodo forÁa a ativaÁ„o do modo normal no tamanho da fonte de impress„o
-	 * @throws CommException ExceÁ„o de comunicaÁ„o
-	 * @throws EcnfException ExceÁ„o do ECNF
+	 * M√©todo for√ßa a ativa√ß√£o do modo normal no tamanho da fonte de impress√£o
+	 * @throws CommException Exce√ß√£o de comunica√ß√£o
+	 * @throws EcnfException Exce√ß√£o do ECNF
 	 */
 	public void ativarModoNormal() throws CommException, EcnfException{
 		try {
@@ -479,9 +520,9 @@ public class Ecnf {
 	}
 	
 	/**
-	 * MÈtodo forÁa a ativaÁ„o do modo condensado no tamanho da fonte de impress„o
-	 * @throws CommException ExceÁ„o de comunicaÁ„o
-	 * @throws EcnfException ExceÁ„o do ECNF
+	 * M√©todo for√ßa a ativa√ß√£o do modo condensado no tamanho da fonte de impress√£o
+	 * @throws CommException Exce√ß√£o de comunica√ß√£o
+	 * @throws EcnfException Exce√ß√£o do ECNF
 	 */
 	public void ativarModoCondensado() throws CommException, EcnfException{
 		try {
@@ -492,9 +533,9 @@ public class Ecnf {
 	}
 	
 	/**
-	 * MÈtodo forÁa a ativaÁ„o do modo expandido no tamanho da fonte de impress„o
-	 * @throws CommException ExceÁ„o de comunicaÁ„o
-	 * @throws EcnfException ExceÁ„o do ECNF
+	 * M√©todo for√ßa a ativa√ß√£o do modo expandido no tamanho da fonte de impress√£o
+	 * @throws CommException Exce√ß√£o de comunica√ß√£o
+	 * @throws EcnfException Exce√ß√£o do ECNF
 	 */
 	public void ativarModoExpandido() throws CommException, EcnfException{
 		try {
@@ -505,9 +546,9 @@ public class Ecnf {
 	}
 	
 	/**
-	 * MÈtodo corta o papel integralmente no ECNF
-	 * @throws CommException ExceÁ„o de comunicaÁ„o
-	 * @throws EcnfException ExceÁ„o do ECNF
+	 * M√©todo corta o papel integralmente no ECNF
+	 * @throws CommException Exce√ß√£o de comunica√ß√£o
+	 * @throws EcnfException Exce√ß√£o do ECNF
 	 */
 	public void cortarPapel() throws CommException, EcnfException{
 		try {
@@ -518,9 +559,9 @@ public class Ecnf {
 	}
 	
 	/**
-	 * MÈtodo corta o papel parcialmente no ECNF
-	 * @throws CommException ExceÁ„o de comunicaÁ„o
-	 * @throws EcnfException ExceÁ„o do ECNF
+	 * M√©todo corta o papel parcialmente no ECNF
+	 * @throws CommException Exce√ß√£o de comunica√ß√£o
+	 * @throws EcnfException Exce√ß√£o do ECNF
 	 */
 	public void cortarParcialmentePapel() throws CommException, EcnfException{
 		try {
@@ -531,9 +572,9 @@ public class Ecnf {
 	}
 	
 	/**
-	 * MÈtodo abre a gaveta conectada no ECNF
-	 * @throws CommException ExceÁ„o de comunicaÁ„o
-	 * @throws EcnfException ExceÁ„o do ECNF
+	 * M√©todo abre a gaveta conectada no ECNF
+	 * @throws CommException Exce√ß√£o de comunica√ß√£o
+	 * @throws EcnfException Exce√ß√£o do ECNF
 	 */
 	public void abrirGaveta() throws CommException, EcnfException{
 		try {
@@ -544,7 +585,7 @@ public class Ecnf {
 	}
 	
 	/**
-	 * MÈtodo verifica se a gaveta est· aberta
+	 * M√©todo verifica se a gaveta est√° aberta
 	 * @return boolean
 	 * <li> True - Caso a gaveta esteja aberta
 	 * <li> False - Caso a gaveta estaja fechada
@@ -560,9 +601,9 @@ public class Ecnf {
 	}
 	
 	/**
-	 * MÈtodo pula uma linha na impress„o do ECNF
-	 * @throws CommException ExceÁ„o de comunicaÁ„o
-	 * @throws EcnfException ExceÁ„o do ECNF
+	 * M√©todo pula uma linha na impress√£o do ECNF
+	 * @throws CommException Exce√ß√£o de comunica√ß√£o
+	 * @throws EcnfException Exce√ß√£o do ECNF
 	 */
 	public void pularLinha() throws CommException, EcnfException{
 		try {
@@ -573,8 +614,8 @@ public class Ecnf {
 	}
 	
 	/**
-	 * MÈtodo verifica a quantidade de caracteres por linha no modelo de ECF  instanciado
-	 * @return N˙mero de colunas
+	 * M√©todo verifica a quantidade de caracteres por linha no modelo de ECF  instanciado
+	 * @return N√∫mero de colunas
 	 */
 	public Integer getNumColunas(){
 		return ecnf.getNumColunas();

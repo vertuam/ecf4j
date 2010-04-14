@@ -14,7 +14,7 @@ import org.ecf4j.utils.comm.exceptions.CommException;
 import org.ecf4j.utils.files.FileUtils;
 
 /**
- * @author pablo
+ * @author Pablo
  *
  */
 public class DisplayTecladoAbstract extends CommEquipto {
@@ -53,7 +53,7 @@ public class DisplayTecladoAbstract extends CommEquipto {
 			*/
 			
 		}else{
-			//Implementação para windows TODO
+			//Implementaï¿½ï¿½o para windows TODO
 		}
 	}
 	

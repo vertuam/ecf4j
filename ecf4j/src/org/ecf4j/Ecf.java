@@ -1,30 +1,30 @@
 /**
- * Ecf4J - framework Java para interação com equipamentos de Automação Comercial 
+ * Ecf4J - framework Java para interaÃ§Ã£o com equipamentos de AutomaÃ§Ã£o Comercial 
  * 
  * Direitos Autorais Reservados (c) 2009-2010 ecf4j.org
  *
- * Autores: Agner Gerônimo Munhoz, 
+ * Autores: Agner GerÃ´nimo Munhoz, 
  *          Pablo Henrique Fassina, 
  *          Rafael Pasqualini de Freitas,
  *          Wellington Carvalho
  *
- * Você pode obter a última versão desse arquivo na pagina do Ecf4J.org
- * disponível em: <http://www.ecf4j.org> 21/09/2009.
+ * VocÃª pode obter a Ãºltima versÃ£o desse arquivo na pagina do Ecf4J.org
+ * disponÃ­vel em: <http://www.ecf4j.org> 21/09/2009.
  *
- * Este arquivo é parte da framework Ecf4J
+ * Este arquivo Ã© parte da framework Ecf4J
  *
- * Ecf4J é um framework livre; você pode redistribui-lo e/ou 
- * modifica-lo dentro dos termos da Licença Pública Geral Menor GNU como 
- * publicada pela Fundação do Software Livre (FSF); na versão 2.1 da 
- * Licença.
+ * Ecf4J Ã© um framework livre; vocÃª pode redistribui-lo e/ou 
+ * modifica-lo dentro dos termos da LicenÃ§a PÃºblica Geral Menor GNU como 
+ * publicada pela FundaÃ§Ã£o do Software Livre (FSF); na versÃ£o 2.1 da 
+ * LicenÃ§a.
  *
- * Este framework é distribuido na esperança que possa ser  util, 
- * mas SEM NENHUMA GARANTIA; sem uma garantia implicita de ADEQUAÇÂO a qualquer
- * MERCADO ou APLICAÇÃO EM PARTICULAR. Veja a
- * Licença Pública Geral GNU para maiores detalhes.
+ * Este framework Ã© distribuido na esperanÃ§a que possa ser  util, 
+ * mas SEM NENHUMA GARANTIA; sem uma garantia implicita de ADEQUAÃ‡Ã‚O a qualquer
+ * MERCADO ou APLICAÃ‡ÃƒO EM PARTICULAR. Veja a
+ * LicenÃ§a PÃºblica Geral GNU para maiores detalhes.
  *
- * Você deve ter recebido uma cópia da Licença Pública Geral Menor GNU
- * junto com este framework, se não, escreva para a Fundação do Software
+ * VocÃª deve ter recebido uma cÃ³pia da LicenÃ§a PÃºblica Geral Menor GNU
+ * junto com este framework, se nÃ£o, escreva para a FundaÃ§Ã£o do Software
  * Livre(FSF) Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  */
 package org.ecf4j;
@@ -58,11 +58,11 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método de inicialização do ECF
-	 * @param codigo Código do ECF
+	 * MÃ©todo de inicializaÃ§Ã£o do ECF
+	 * @param codigo CÃ³digo do ECF
 	 * @param porta Porta utilizada pelo ECF
-	 * @throws EcfException Exceção do ECF
-	 * @throws CommException Exceção da comunicação
+	 * @throws EcfException ExceÃ§Ã£o do ECF
+	 * @throws CommException ExceÃ§Ã£o da comunicaÃ§Ã£o
 	 */
 	public void inicializar(String codigo, String porta) throws EcfException, CommException{
 		try {
@@ -78,7 +78,7 @@ public class Ecf {
 	}
 		
 	/**
-	 * Método de finalização do ECF
+	 * MÃ©todo de finalizaÃ§Ã£o do ECF
 	 */
 	public void finalizar(){
 		ecf.finalizar();
@@ -86,11 +86,11 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método verifica se a porta esta habilitada
+	 * MÃ©todo verifica se a porta esta habilitada
 	 * @return boolean 
 	 * <li> True - Se a porta esteja habilitada
 	 * <li> False - Caso a porta esteja desabilitada
-	 * @throws EcfException Exceção do ECF
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public boolean isCommEnabled() throws EcfException {
 		try {
@@ -101,9 +101,9 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método retorna o fabricante do ECF
+	 * MÃ©todo retorna o fabricante do ECF
 	 * @return String - Fabricante do ECF
-	 * @throws EcfException Exceção do ECF
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public String fabricante() throws EcfException{
 		try {
@@ -114,9 +114,9 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método retorna o modelo do ECF
+	 * MÃ©todo retorna o modelo do ECF
 	 * @return String - Modelo do ECF
-	 * @throws EcfException Exceção do ECF
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public String modelo() throws EcfException{
 		try {
@@ -127,11 +127,11 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método verifica se o modelo já foi homologado
+	 * MÃ©todo verifica se o modelo jÃ¡ foi homologado
 	 * @return boolean
 	 * <li> True - Caso esteja homologado
-	 * <li> False - Caso não esteja homologado
-	 * @throws EcfException Exceção do ECF
+	 * <li> False - Caso nÃ£o esteja homologado
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public boolean isHomologado() throws EcfException{
 		try {
@@ -143,11 +143,11 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método verifica se o sinal da gaveta esta invertido
+	 * MÃ©todo verifica se o sinal da gaveta esta invertido
 	 * @return boolean
 	 * <li> True - Caso esteja com Sinal invertido
-	 * <li> False - Caso não esteja com sinal invertido
-	 * @throws EcfException Exceção do ECF
+	 * <li> False - Caso nÃ£o esteja com sinal invertido
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public boolean isGavetaSinalInvertido() throws EcfException {
 		try {
@@ -158,9 +158,9 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método seta o tipo do sinal da gaveta no ECF
+	 * MÃ©todo seta o tipo do sinal da gaveta no ECF
 	 * @param gavetaSinalInvertido boolean - indicando se o sinal esta invertido
-	 * @throws EcfException Exceção do ECF
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public void setGavetaSinalInvertido(boolean gavetaSinalInvertido) throws EcfException {
 		try {
@@ -170,14 +170,14 @@ public class Ecf {
 		}
 	}
 	
-	//Informações do ECF----------------------------------------------------------------
+	//InformaÃ§Ãµes do ECF----------------------------------------------------------------
 	
 	/**
-	 * Método verifica se há pouco papel no ECF
+	 * MÃ©todo verifica se hÃ¡ pouco papel no ECF
 	 * @return boolean
 	 * <li> True - Se houver Pouco Papel
-	 * <li> False - Caso não esteja com Pouco Papel
-	 * @throws EcfException Exceção do ECF 
+	 * <li> False - Caso nÃ£o esteja com Pouco Papel
+	 * @throws EcfException ExceÃ§Ã£o do ECF 
 	 */
 	public boolean isPoucoPapel() throws EcfException{
 		try {
@@ -188,11 +188,11 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método verifica se não há papel no ECF
+	 * MÃ©todo verifica se nÃ£o ha papel no ECF
 	 * @return boolean
 	 * <li> True - Se estiver Sem Papel 
-	 * <li> False - Se não estiver Sem Papel
-	 * @throws EcfException Exceção do ECF
+	 * <li> False - Se nÃ£o estiver Sem Papel
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public boolean isSemPapel() throws EcfException{
 		try {
@@ -203,12 +203,12 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método verifica se é permitido cancelar o último cupom fiscal emitido
+	 * MÃ©todo verifica se Ã© permitido cancelar o Ãºltimo cupom fiscal emitido
 	 * @return boolean
-	 * <li> True - Caso seja possível cancelar 
-	 * <li> False - Caso não seja possível cancelar
-	 * @throws EcfException Exceção do ECF
-	 * @throws CommException Exceção da comunicação
+	 * <li> True - Caso seja possÃ­vel cancelar 
+	 * <li> False - Caso nÃ£o seja possÃ­vel cancelar
+	 * @throws EcfException ExceÃ§Ã£o do ECF
+	 * @throws CommException ExceÃ§Ã£o da comunicaÃ§Ã£o
 	 */
 	public boolean isPermiteCancelamentoCupomFiscal() throws EcfException, CommException{
 		try {
@@ -219,12 +219,12 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método verifica se não há espaço na memória fiscal
+	 * MÃ©todo verifica se nÃ£o hÃ¡ espaÃ§o na memÃ³ria fiscal
 	 * @return boolean
-	 * <li> True - Se não houver mais espaço
-	 * <li> False - Se ainda houver espaço na memória fiscal
-	 * @throws EcfException Exceção do ECF
-	 * @throws CommException Exceção de comunicação
+	 * <li> True - Se nÃ£o houver mais espaÃ§o
+	 * <li> False - Se ainda houver espaÃ§o na memÃ³ria fiscal
+	 * @throws EcfException ExceÃ§Ã£o do ECF
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
 	 */
 	public boolean isMemoriaFiscalSemEspaco() throws EcfException, CommException{
 		try {
@@ -235,12 +235,12 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método verifica se é permitido cancelar o último cupom não fiscal emitido 
+	 * MÃ©todo verifica se Ã© permitido cancelar o Ãºltimo cupom nÃ£o fiscal emitido 
 	 * @return boolean
-	 * <li> True - Caso seja possível cancelar
-	 * <li> False - Caso não seja possível cancelar
-	 * @throws EcfException Exceção do ECF
-	 * @throws CommException Exceção de comunicação
+	 * <li> True - Caso seja possÃ­vel cancelar
+	 * <li> False - Caso nÃ£o seja possÃ­vel cancelar
+	 * @throws EcfException ExceÃ§Ã£o do ECF
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
 	 */
 	public boolean isPermiteCancelamentoNaoFiscal() throws EcfException, CommException{
 		try {
@@ -251,12 +251,12 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método verifica se é permitido estornar comprovante
+	 * MÃ©todo verifica se Ã© permitido estornar comprovante
 	 * @return boolean
-	 * <li> True - Caso seja possível estornar
-	 * <li> False - Caso não seja possível estornar
-	 * @throws EcfException Exceção do ECF
-	 * @throws CommException Exceção de comunicação
+	 * <li> True - Caso seja possÃ­vel estornar
+	 * <li> False - Caso nÃ£o seja possÃ­vel estornar
+	 * @throws EcfException ExceÃ§Ã£o do ECF
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
 	 */
 	public boolean isPermiteEstornoComprovante() throws EcfException, CommException{
 		try {
@@ -267,12 +267,12 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método verifica se o ECF está com o Horário de verão ativo
+	 * MÃ©todo verifica se o ECF estÃ¡ com o HorÃ¡rio de verÃ£o ativo
 	 * @return boolean
 	 * <li> True - Se estiver ativo
 	 * <li> False - Se estiver inativo
-	 * @throws EcfException Exceção do ECF
-	 * @throws CommException Exceção de comunicação
+	 * @throws EcfException ExceÃ§Ã£o do ECF
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
 	 */
 	public boolean isHorarioVerao() throws EcfException, CommException{
 		try {
@@ -283,10 +283,10 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método ativa/desativa horário de verão no ECF
-	 * @param isHorarioVerao parametro indicando se Horário de verão está ativo
-	 * @throws EcfException Exceção do ECF
-	 * @throws CommException Exceção de comunicação
+	 * MÃ©todo ativa/desativa horÃ¡rio de verÃ£o no ECF
+	 * @param isHorarioVerao parametro indicando se HorÃ¡rio de verÃ£o estÃ¡ ativo
+	 * @throws EcfException ExceÃ§Ã£o do ECF
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
 	 */
 	public void setHorarioVerao(boolean isHorarioVerao) throws EcfException, CommException{
 		try {
@@ -297,12 +297,12 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método verifica se o ECF está truncando em seus calculos
+	 * MÃ©todo verifica se o ECF estÃ¡ truncando em seus calculos
 	 * @return boolean
 	 * <li> True - Se estiver truncando
-	 * <li> False - Se não estiver truncando
-	 * @throws EcfException Exceção do ECF
-	 * @throws CommException Exceção de comunicação
+	 * <li> False - Se nÃ£o estiver truncando
+	 * @throws EcfException ExceÃ§Ã£o do ECF
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
 	 */
 	public boolean isTruncando() throws EcfException, CommException{
 		try {
@@ -313,10 +313,10 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método busca no ECF seu número serial
-	 * @return String - Número serial do ECF
-	 * @throws EcfException Exceção do ECF
-	 * @throws CommException Exceção de comunicação
+	 * MÃ©todo busca no ECF seu nÃºmero serial
+	 * @return String - NÃºmero serial do ECF
+	 * @throws EcfException ExceÃ§Ã£o do ECF
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
 	 */
 	public String getNumeroSerial() throws EcfException, CommException{
 		try {
@@ -327,10 +327,10 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método busca no ECF o número do último cupom emitido
-	 * @return int - Número do último cupom emitido
-	 * @throws EcfException Exceção do ECF
-	 * @throws CommException Exceção de comunicação
+	 * MÃ©todo busca no ECF o nÃºmero do Ãºltimo cupom emitido
+	 * @return int - NÃºmero do Ãºltimo cupom emitido
+	 * @throws EcfException ExceÃ§Ã£o do ECF
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
 	 */
 	public int getNumeroCupom() throws EcfException, CommException{
 		try {
@@ -341,10 +341,10 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método busca no ECF o número do último cupom emitido
-	 * @return int - Número do último cupom emitido
-	 * @throws CommException Exceção de comunicação
-	 * @throws EcfException Exceção do ECF
+	 * MÃ©todo busca no ECF o nÃºmero do Ãºltimo cupom emitido
+	 * @return int - NÃºmero do Ãºltimo cupom emitido
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public int getCOO() throws CommException, EcfException{
 		try {
@@ -355,10 +355,10 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método busca no ECF o contador de reinicios de operação 
-	 * @return int - Contador de reinicios de operação
-	 * @throws CommException Exceção de comunicação
-	 * @throws EcfException Exceção do ECF
+	 * MÃ©todo busca no ECF o contador de reinicios de operaÃ§Ã£o 
+	 * @return int - Contador de reinicios de operaÃ§Ã£o
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public int getCRO() throws CommException, EcfException{
 		try {
@@ -369,10 +369,10 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método busca no ECF o contador de reduções Z
-	 * @return int - Contador de Reduções Z
-	 * @throws CommException Exceção de comunicação
-	 * @throws EcfException Exceção do ECF
+	 * MÃ©todo busca no ECF o contador de reduÃ§Ãµes Z
+	 * @return int - Contador de ReduÃ§Ãµes Z
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public int getCRZ() throws CommException, EcfException{
 		try {
@@ -383,10 +383,10 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método busca no ECF o seu número
-	 * @return int - Número do ECF
-	 * @throws CommException Exceção de comunicação
-	 * @throws EcfException Exceção do ECF
+	 * MÃ©todo busca no ECF o seu nÃºmero
+	 * @return int - NÃºmero do ECF
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public int getNumeroEcf() throws CommException, EcfException{
 		try {
@@ -397,10 +397,10 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método busca do ECF o número da loja
-	 * @return int - Número da Loja
-	 * @throws CommException Exceção de comunicação
-	 * @throws EcfException Exceção do ECF
+	 * MÃ©todo busca do ECF o nÃºmero da loja
+	 * @return int - NÃºmero da Loja
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public int getNumeroLoja()  throws CommException, EcfException{
 		try {
@@ -411,10 +411,10 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método busca no ECF a data do ultimo movimento
+	 * MÃ©todo busca no ECF a data do ultimo movimento
 	 * @return Date - Data de movimento no ECF
-	 * @throws CommException Exceção de comunicação
-	 * @throws EcfException Exceção do ECF
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public Date getDataMovimento() throws CommException, EcfException{
 		try {
@@ -425,10 +425,10 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método busca no ECF a data e hora atual
+	 * MÃ©todo busca no ECF a data e hora atual
 	 * @return Date - Data e hora atual
-	 * @throws CommException Exceção de comunicação
-	 * @throws EcfException Exceção do ECF
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public Date getDataHora() throws CommException, EcfException{
 		try {
@@ -439,10 +439,10 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método busca o Grande Total atual do ECF 
+	 * MÃ©todo busca o Grande Total atual do ECF 
 	 * @return BigDecimal - Grande Total do ECF
-	 * @throws CommException Exceção de comunicação 
-	 * @throws EcfException Exceção do ECF
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o 
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public BigDecimal getGrandeTotal() throws CommException, EcfException{
 		try {
@@ -453,10 +453,10 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método calcula o total da venda bruta atual do ECF
+	 * MÃ©todo calcula o total da venda bruta atual do ECF
 	 * @return BigDecimal - Total da Venda Bruta atual
-	 * @throws CommException Exceção de comunicação
-	 * @throws EcfException Exceção do ECF
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public BigDecimal getVendaBruta() throws CommException, EcfException{
 		try {
@@ -467,10 +467,10 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método busca no EFC o número do último item vendido 
-	 * @return int - Número do último item
-	 * @throws CommException Exceção de comunicação
-	 * @throws EcfException Exceção do ECF
+	 * MÃ©todo busca no EFC o nÃºmero do Ãºltimo item vendido 
+	 * @return int - NÃºmero do Ãºltimo item
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public int getNumeroUltimoItem() throws CommException, EcfException{
 		try {
@@ -481,12 +481,12 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método verifica se a gaveta conectada ao ECF está aberta
+	 * MÃ©todo verifica se a gaveta conectada ao ECF estÃ¡ aberta
 	 * @return boolean
 	 * <li> True - Gaveta Aberta
 	 * <li> False - Gaveta fechada
-	 * @throws CommException Exceção de comunicação
-	 * @throws EcfException Exceção do ECF
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public boolean isGavetaAberta() throws CommException, EcfException{
 		try {
@@ -497,9 +497,9 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método envia comando a gaveta conectada ao ECF para abri-la
-	 * @throws CommException Exceção de comunicação
-	 * @throws EcfException Exceção do ECF
+	 * MÃ©todo envia comando a gaveta conectada ao ECF para abri-la
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public void abrirGaveta() throws CommException, EcfException{
 		try {
@@ -510,10 +510,10 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método retorna o estado do ECF
+	 * MÃ©todo retorna o estado do ECF
 	 * @return EcfEstado - Estado do ECF
-	 * @throws CommException Exceção de comunicação
-	 * @throws EcfException Exceção do ECF
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public EcfEstado getEstado() throws CommException, EcfException{
 		try {
@@ -524,10 +524,10 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método busca o valor do grande Total no momento da última Redução Z
-	 * @return BigDecimal - Grande Total da última redução z
-	 * @throws CommException Exceção de comunicação
-	 * @throws EcfException Exceção do ECF
+	 * MÃ©todo busca o valor do grande Total no momento da Ãºltima ReduÃ§Ã£o Z
+	 * @return BigDecimal - Grande Total da Ãºltima reduÃ§Ã£o z
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public BigDecimal getGrandeTotalReducaoZ()throws CommException, EcfException{
 		try {
@@ -538,10 +538,10 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método busca do ECF o valor de acrescímos da última redução z 
-	 * @return BigDecimal - Acrescímos da última Redução Z
-	 * @throws CommException Exceção de comunicação
-	 * @throws EcfException Exceção do ECF
+	 * MÃ©todo busca do ECF o valor de acrÃ©scimos da Ãºltima reduÃ§Ã£o z 
+	 * @return BigDecimal - AcrÃ©scimos da Ãºltima ReduÃ§Ã£o Z
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public BigDecimal getAcrescimoReducaoZ() throws CommException, EcfException{
 		try{
@@ -552,8 +552,8 @@ public class Ecf {
 	}
 
 	/**
-	 * Método busca do ECF o valor de descontos da última redução z
-	 * @return BigDecimal - Descontos da última Reducao Z
+	 * MÃ©todo busca do ECF o valor de descontos da Ãºltima reduÃ§Ã£o z
+	 * @return BigDecimal - Descontos da Ãºltima Reducao Z
 	 * @throws CommException
 	 * @throws EcfException
 	 */
@@ -566,10 +566,10 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método busca no ECF o número do cupom da última redução z
-	 * @return int - COO da última Redução Z
-	 * @throws CommException Exceção de comunicação
-	 * @throws EcfException Exceção do ECF
+	 * MÃ©todo busca no ECF o nÃºmero do cupom da Ãºltima reduÃ§Ã£o z
+	 * @return int - COO da Ãºltima ReduÃ§Ã£o Z
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public int getCOOReducaoZ() throws CommException, EcfException {
 		try{
@@ -580,10 +580,10 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método busca no ECF valor total de Sangrias registradas na última redução z
-	 * @return BigDecimal - Valor total de Sangrias da ùltima Redução Z
-	 * @throws CommException Exceção de comunicação
-	 * @throws EcfException Exceção do ECF
+	 * MÃ©todo busca no ECF valor total de Sangrias registradas na Ãºltima reduÃ§Ã£o z
+	 * @return BigDecimal - Valor total de Sangrias da Ãºltima ReduÃ§Ã£o Z
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public BigDecimal getSangriaReducaoZ() throws CommException, EcfException {
 		try{
@@ -594,10 +594,10 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método busca no ECF valor total de Suprimentos registradas na última redução z
-	 * @return BigDecimal - Valor total de Suprimentos da ùltima Redução Z
-	 * @throws CommException Exceção de comunicação
-	 * @throws EcfException Exceção do ECF
+	 * MÃ©todo busca no ECF valor total de Suprimentos registradas na Ãºltima reduÃ§Ã£o z
+	 * @return BigDecimal - Valor total de Suprimentos da Ãºltima ReduÃ§Ã£o Z
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public BigDecimal getSuprimentoReducaoZ() throws CommException, EcfException {
 		try{
@@ -608,10 +608,10 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método busca no ECF valor total de Substrituições Tributárias registradas na última redução z
-	 * @return BigDecimal - Valor total de Substrituições Tributárias da última Redução Z
-	 * @throws CommException Exceção de comunicação
-	 * @throws EcfException Exceção do ECF
+	 * MÃ©todo busca no ECF valor total de SubstrituiÃ§Ãµes TributÃ¡rias registradas na Ãºltima reduÃ§Ã£o z
+	 * @return BigDecimal - Valor total de SubstrituiÃ§Ãµes TributÃ¡rias da Ãºltima ReduÃ§Ã£o Z
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public BigDecimal getSubstituicao() throws CommException, EcfException{
 		try{
@@ -622,10 +622,10 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método busca no ECF valor total de Não Tributados registrados na última redução z
-	 * @return BigDecimal - Valor total de Não Tributados da última Redução Z
-	 * @throws CommException Exceção de comunicação
-	 * @throws EcfException Exceção do ECF
+	 * MÃ©todo busca no ECF valor total de NÃ£o Tributados registrados na Ãºltima reduÃ§Ã£o z
+	 * @return BigDecimal - Valor total de NÃ£o Tributados da Ãºltima ReduÃ§Ã£o Z
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public BigDecimal getNaoTributado() throws CommException, EcfException{
 		try{
@@ -636,10 +636,10 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método busca no ECF valor total de Isentos registrados na última redução z
-	 * @return BigDecimal - Valor total de Isentos da última Redução Z
-	 * @throws CommException Exceção de comunicação
-	 * @throws EcfException Exceção do ECF
+	 * MÃ©todo busca no ECF valor total de Isentos registrados na Ãºltima reduÃ§Ã£o z
+	 * @return BigDecimal - Valor total de Isentos da Ãºltima ReduÃ§Ã£o Z
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public BigDecimal getIsento() throws CommException, EcfException{
 		try{
@@ -650,10 +650,10 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método busca o COO inicial da última redução z
-	 * @return int - COO inicial da última Redução Z
-	 * @throws CommException Exceção de comunicação
-	 * @throws EcfException Exceção do ECF
+	 * MÃ©todo busca o COO inicial da Ãºltima reduÃ§Ã£o z
+	 * @return int - COO inicial da Ãºltima ReduÃ§Ã£o Z
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public int getCOOInicial() throws CommException, EcfException{
 		try{
@@ -664,10 +664,10 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método busca o COO final da última redução z
-	 * @return int - COO final da última Redução Z
-	 * @throws CommException Exceção de comunicação
-	 * @throws EcfException Exceção do ECF
+	 * MÃ©todo busca o COO final da Ãºltima reduÃ§Ã£o z
+	 * @return int - COO final da Ãºltima ReduÃ§Ã£o Z
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public int getCOOFinal() throws CommException, EcfException{
 		try{
@@ -678,10 +678,10 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método busca no ECF o Contador de Reinicios de Operação registrado na última reducão z
-	 * @return int - CRO registrado na última Redução Z
-	 * @throws CommException Exceção de comunicação
-	 * @throws EcfException Exceção do ECF
+	 * MÃ©todo busca no ECF o Contador de Reinicios de OperaÃ§Ã£o registrado na Ãºltima reduÃ§Ã£o z
+	 * @return int - CRO registrado na Ãºltima ReduÃ§Ã£o Z
+	 * @throws CommException ExcÃ§Ã£o de comunicaÃ§Ã£o
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public int getCROReducaoZ() throws CommException, EcfException{
 		try{
@@ -692,10 +692,10 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método busca no ECF o totalizador parcial de Acrescímos
-	 * @return BigDecimal - Totalizador de Acrescímos
-	 * @throws CommException Exceção de comunicação
-	 * @throws EcfException Exceção do ECF
+	 * MÃ©todo busca no ECF o totalizador parcial de AcrÃ©scimos
+	 * @return BigDecimal - Totalizador de AcrÃ©scimos
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public BigDecimal getAcrescimo() throws CommException, EcfException{
 		try{
@@ -706,10 +706,10 @@ public class Ecf {
 	}
 	
 	/**
-	 * Metodo busca no ECF o totalizador parcial de cancelamentos com incidência em serviços
+	 * MÃ©todo busca no ECF o totalizador parcial de cancelamentos com incidÃªncia em serviÃ§os
 	 * @return BigDecimal - Totalizador de Cancelamentos ISS
-	 * @throws CommException Exceção de comunicação
-	 * @throws EcfException Exceção do ECF
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public BigDecimal getCancelamentoISS()throws CommException, EcfException{
 		try {
@@ -720,10 +720,10 @@ public class Ecf {
 	}
 	
 	/**
-	 * Metodo busca no ECF o totalizador parcial de cancelamentos com incidência em produtos
+	 * MÃ©todo busca no ECF o totalizador parcial de cancelamentos com incidÃªncia em produtos
 	 * @return BigDecimal - Totalizador de Cancelamentos ICMS
-	 * @throws CommException Exceção de comunicação
-	 * @throws EcfException Exceção do ECF
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public BigDecimal getCancelamentoICMS()throws CommException, EcfException{
 		try {
@@ -734,10 +734,10 @@ public class Ecf {
 	}
 	
 	/**
-	 * Metodo busca no ECF o totalizador parcial de descontos com incidência em serviços
+	 * MÃ©todo busca no ECF o totalizador parcial de descontos com incidÃªncia em serviÃ§os
 	 * @return BigDecimal - Totalizador de Descontos ISS
-	 * @throws CommException Exceção de comunicação
-	 * @throws EcfException Exceção do ECF
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public BigDecimal getDescontoISS()throws CommException, EcfException{
 		try {
@@ -748,10 +748,10 @@ public class Ecf {
 	}
 	
 	/**
-	 * Metodo busca no ECF o totalizador parcial de descontos com incidência em produtos
+	 * MÃ©todo busca no ECF o totalizador parcial de descontos com incidÃªncia em produtos
 	 * @return BigDecimal - Totalizador de Descontos ICMS
-	 * @throws CommException Exceção de comunicação
-	 * @throws EcfException Exceção do ECF
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public BigDecimal getDescontoICMS()throws CommException, EcfException{
 		try {
@@ -762,10 +762,10 @@ public class Ecf {
 	}
 	
 	/**
-	 * Metodo busca no ECF o totalizador parcial de acrescímos com incidência em produtos
-	 * @return BigDecimal - Totalizador de Acrescímos ICMS
-	 * @throws CommException Exceção de comunicação
-	 * @throws EcfException Exceção do ECF
+	 * MÃ©todo busca no ECF o totalizador parcial de acrÃ©scimos com incidÃªncia em produtos
+	 * @return BigDecimal - Totalizador de AcrÃ©scimos ICMS
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public BigDecimal getAcrescimoICMS()throws CommException, EcfException{
 		try {
@@ -776,10 +776,10 @@ public class Ecf {
 	}
 	
 	/**
-	 * Metodo busca no ECF o totalizador parcial de acrescímos com incidência em serviços
-	 * @return BigDecimal - Totalizador de Acrescímos ISS
-	 * @throws CommException Exceção de comunicação
-	 * @throws EcfException Exceção do ECF
+	 * MÃ©todo busca no ECF o totalizador parcial de acrÃ©scimos com incidÃªncia em serviÃ§os
+	 * @return BigDecimal - Totalizador de AcrÃ©scimos ISS
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public BigDecimal getAcrescimoISS()throws CommException, EcfException{
 		try {
@@ -790,10 +790,10 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método busca no ECF o valor da Venda Bruta registrada na última redução z
-	 * @return BigDecimal - valor da Venda Bruta na última Redução Z
-	 * @throws CommException Exceção de comunicação
-	 * @throws EcfException Exceção do ECF
+	 * MÃ©todo busca no ECF o valor da Venda Bruta registrada na Ãºltima reduÃ§Ã£o z
+	 * @return BigDecimal - valor da Venda Bruta na Ãºltima ReduÃ§Ã£o Z
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public BigDecimal getVendaBrutaReducaoZ() throws CommException, EcfException{
 		try {
@@ -804,10 +804,10 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método busca no ECF o totalizador parcial de cancelamentos
+	 * MÃ©todo busca no ECF o totalizador parcial de cancelamentos
 	 * @return BigDecimal - Totalizador de Cancelamentos
-	 * @throws CommException Exceção de comunicação
-	 * @throws EcfException Exceção do ECF
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public BigDecimal getCancelamento() throws CommException, EcfException{
 		try {
@@ -818,10 +818,10 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método busca no ECF o totalizador parcial de descontos
+	 * MÃ©todo busca no ECF o totalizador parcial de descontos
 	 * @return BigDecimal - Totalizador de Descontos
-	 * @throws CommException Exceção de comunicação
-	 * @throws EcfException Exceção do ECF
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public BigDecimal getDesconto() throws CommException, EcfException{
 		try {
@@ -848,11 +848,11 @@ public class Ecf {
 	}
 		
 	
-	// Relatórios --------------------------------------------------------------
+	// RelatÃ³rios --------------------------------------------------------------
 	/**
-	 * Método envia comando ao ECF para que seja emitida a Leitura X
-	 * @throws CommException Exceção de comunicação
-	 * @throws EcfException Exceção do ECF
+	 * MÃ©todo envia comando ao ECF para que seja emitida a Leitura X
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public void leituraX() throws CommException, EcfException{
 		try {
@@ -863,10 +863,10 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método envia comando ao ECF para que seja emitida a Redução Z
+	 * MÃ©todo envia comando ao ECF para que seja emitida a ReduÃ§Ã£o Z
 	 * @param dataMovimentacao <i>Date</i>  
-	 * @throws CommException Exceção de comunicação
-	 * @throws EcfException Exceção do ECF
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public void reducaoZ(Date dataMovimentacao) throws CommException, EcfException{
 		try {
@@ -877,11 +877,11 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método envia comando ao ECF para que este, imprima um relatório da memória fiscal filtrado por datas
+	 * MÃ©todo envia comando ao ECF para que este, imprima um relatÃ³rio da memÃ³ria fiscal filtrado por datas
 	 * @param dataInicial <i>Date</i>
 	 * @param dataFinal <i>Date</i>
-	 * @throws CommException Exceção de comunicação
-	 * @throws EcfException Exceção do ECF
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public void leituraMemoriaFiscalData(Date dataInicial, Date dataFinal) 
 			throws EcfException, CommException{
@@ -893,12 +893,12 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método envia comando ao ECF para que este, retorne via porta serial um relatório da memória fiscal filtrado por datas
+	 * MÃ©todo envia comando ao ECF para que este, retorne via porta serial um relatÃ³rio da memÃ³ria fiscal filtrado por datas
 	 * @param dataInicial <i>Date</i>
 	 * @param dataFinal <i>Date</i>
-	 * @return String - Relatório da memória fiscal para exibir em video
-	 * @throws EcfException Exceção do ECF
-	 * @throws CommException Exceção de comunicação
+	 * @return String - RelatÃ³rio da memÃ³ria fiscal para exibir em video
+	 * @throws EcfException ExceÃ§Ã£o do ECF
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
 	 */
 	public String leituraMemoriaFiscalDataSerial(Date dataInicial, Date dataFinal) 
 			throws EcfException, CommException{
@@ -910,11 +910,11 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método envia comando ao ECF para que este, imprima um relatório da memória fiscal de maneira sintética filtrado por datas
+	 * MÃ©todo envia comando ao ECF para que este, imprima um relatÃ³rio da memÃ³ria fiscal de maneira sintÃ©tica filtrado por datas
 	 * @param dataInicial <i>Date</i>
 	 * @param dataFinal <i>Date</i>
-	 * @throws EcfException Exceção do ECF
-	 * @throws CommException Exceção de comunicação
+	 * @throws EcfException ExceÃ§Ã£o do ECF
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
 	 */
 	public void leituraMemoriaFiscalDataSimplificado(Date dataInicial, Date dataFinal) 
 			throws EcfException, CommException{
@@ -926,12 +926,12 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método envia comando ao ECF para que este, retorne via porta serial um relatório da memória fiscal sintético filtrado por datas
+	 * MÃ©todo envia comando ao ECF para que este, retorne via porta serial um relatÃ³rio da memÃ³ria fiscal sintÃ©tico filtrado por datas
 	 * @param dataInicial <i>Date</i>
 	 * @param dataFinal <i>Date</i>
-	 * @return String - Relatório da memória fiscal para exibir em video
-	 * @throws EcfException Exceção do ECF
-	 * @throws CommException Exceção de comunicação
+	 * @return String - RelatÃ³rio da memÃ³ria fiscal para exibir em video
+	 * @throws EcfException ExceÃ§Ã£o do ECF
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
 	 */
 	public String leituraMemoriaFiscalDataSimplificadoSerial(Date dataInicial, Date dataFinal) 
 			throws EcfException, CommException{
@@ -943,11 +943,11 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método envia comando ao ECF para que este, imprime um relatório da memória fiscal filtrado por CRZ
+	 * MÃ©todo envia comando ao ECF para que este, imprime um relatÃ³rio da memÃ³ria fiscal filtrado por CRZ
 	 * @param reducaoInicial <i>int</i> - CRZ inicial
 	 * @param reducaoFinal <i>int</i> - CRZ final
-	 * @throws EcfException Exceção do ECF
-	 * @throws CommException Exceção de comunicação
+	 * @throws EcfException ExceÃ§Ã£o do ECF
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
 	 */
 	public void leituraMemoriaFiscalReducao(int reducaoInicial, int reducaoFinal) throws EcfException, CommException{
 		try {
@@ -958,12 +958,12 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método envia comando ao ECF para que este, retorne via porta serial um relatório da memória fiscal filtrado por CRZ
+	 * MÃ©todo envia comando ao ECF para que este, retorne via porta serial um relatÃ³rio da memÃ³ria fiscal filtrado por CRZ
 	 * @param reducaoInicial <i>int</i> - CRZ inicial
 	 * @param reducaoFinal <i>int</i> - CRZ final
-	 * @return String - Relatório da memória fiscal para exibir em video
-	 * @throws EcfException Exceção do ECF
-	 * @throws CommException Exceção de comunicação
+	 * @return String - RelatÃ³rio da memÃ³ria fiscal para exibir em video
+	 * @throws EcfException ExceÃ§Ã£o do ECF
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
 	 */
 	public String leituraMemoriaFiscalReducaoSerial(int reducaoInicial, int reducaoFinal) throws EcfException, CommException{
 		try {
@@ -974,11 +974,11 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método envia comando ao ECF para que este, imprime um relatório da memória fiscal sintético filtrado por CRZ
+	 * MÃ©todo envia comando ao ECF para que este, imprime um relatÃ³rio da memÃ³ria fiscal sintÃ©tico filtrado por CRZ
 	 * @param reducaoInicial <i>int</i> - CRZ inicial
 	 * @param reducaoFinal <i>int</i> - CRZ final
-	 * @throws EcfException Exceção do ECF
-	 * @throws CommException Exceção de comunicação
+	 * @throws EcfException ExceÃ§Ã£o do ECF
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
 	 */
 	public void leituraMemoriaFiscalReducaoSimplificado(int reducaoInicial, int reducaoFinal) throws EcfException, CommException{
 		try {
@@ -989,12 +989,12 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método envia comando ao ECF para que este, retorne via porta serial um relatório da memória fiscal sintético filtrado por CRZ
+	 * MÃ©todo envia comando ao ECF para que este, retorne via porta serial um relatÃ³rio da memÃ³ria fiscal sintÃ©tico filtrado por CRZ
 	 * @param reducaoInicial <i>int</i> - CRZ inicial
 	 * @param reducaoFinal <i>int</i> - CRZ final
-	 * @return String - Relatório da memória fiscal para exibir em video
-	 * @throws EcfException Exceção do ECF
-	 * @throws CommException Exceção de comunicação
+	 * @return String - RelatÃ³rio da memÃ³ria fiscal para exibir em video
+	 * @throws EcfException ExceÃ§Ã£o do ECF
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
 	 */
 	public String leituraMemoriaFiscalReducaoSimplificadoSerial(int reducaoInicial, int reducaoFinal) throws EcfException, CommException{
 		try {
@@ -1005,9 +1005,9 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método abre um relatório gerencial no ECF tipo "default"
-	 * @throws EcfException Exceção do ECF
-	 * @throws CommException Exceção de comunicação
+	 * MÃ©todo abre um relatÃ³rio gerencial no ECF tipo "default"
+	 * @throws EcfException ExceÃ§Ã£o do ECF
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
 	 */
 	public void abrirRelatorioGerencial() throws CommException, EcfException{
 		try {
@@ -1018,10 +1018,10 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método imprime uma linha no relatório gerencial aberto
+	 * MÃ©todo imprime uma linha no relatÃ³rio gerencial aberto
 	 * @param texto <i>String</i> texto a ser impresso
-	 * @throws CommException Exceção de comunicação
-	 * @throws EcfException Exceção do ECF
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public void linhaRelatorioGerencial(String texto) throws CommException, EcfException{
 		try {
@@ -1032,9 +1032,9 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método fecha o relatório gerencial
-	 * @throws CommException Exceção de comunicação
-	 * @throws EcfException Exceção do ECF
+	 * MÃ©todo fecha o relatÃ³rio gerencial
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public void fechaRelatorio() throws CommException, EcfException{
 		try {
@@ -1046,12 +1046,12 @@ public class Ecf {
 	
 	// Cupom Fiscal ------------------------------------------------------------
 	/**
-	 * Método abre um cupom fiscal
+	 * MÃ©todo abre um cupom fiscal
 	 * @param cpfCnpj <i>String</i>
 	 * @param nome <i>String</i>
 	 * @param endereco <i>String</i>
-	 * @throws CommException Exceção de comunicação
-	 * @throws EcfException Exceção do ECF
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public void abrirCupom(String cpfCnpj, String nome, String endereco) throws CommException, EcfException{
 		try {
@@ -1062,15 +1062,15 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método vende um item sem desconto ou acréscimo no ECF
+	 * MÃ©todo vende um item sem desconto ou acrÃ©scimo no ECF
 	 * @param codigo <i>String</i>
 	 * @param descricao <i>String</i>
 	 * @param codAliquota <i>String</i>
 	 * @param quantidade <i>BigDecimal</i>
 	 * @param valorUnitario <i>BigDecimal</i>
 	 * @param unidade <i>String</i>
-	 * @throws CommException Exceção de comunicação
-	 * @throws EcfException Exceção do ECF
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public void venderItem(String codigo, String descricao, String codAliquota, 
 			BigDecimal quantidade, BigDecimal valorUnitario, String unidade) 
@@ -1083,7 +1083,7 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método vende um item com acréscimo por valor no ECF
+	 * MÃ©todo vende um item com acrÃ©scimo por valor no ECF
 	 * @param codigo <i>String</i>
 	 * @param descricao <i>String</i>
 	 * @param codAliquota <i>String</i>
@@ -1091,8 +1091,8 @@ public class Ecf {
 	 * @param valorUnitario <i>BigDecimal</i>
 	 * @param unidade <i>String</i>
 	 * @param acrescimo <i>BigDecimal</i>
-	 * @throws CommException Exceção de comunicação
-	 * @throws EcfException Exceção do ECF
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public void venderItemAcrescimo(String codigo, String descricao, String codAliquota, 
 			BigDecimal quantidade, BigDecimal valorUnitario, String unidade, BigDecimal acrescimo) 
@@ -1105,7 +1105,7 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método vende um item com acréscimo percentual no ECF
+	 * MÃ©todo vende um item com acrÃ©scimo percentual no ECF
 	 * @param codigo <i>String</i>
 	 * @param descricao <i>String</i>
 	 * @param codAliquota <i>String</i>
@@ -1113,8 +1113,8 @@ public class Ecf {
 	 * @param valorUnitario <i>BigDecimal</i>
 	 * @param unidade <i>String</i>
 	 * @param acrescimo <i>BigDecimal</i>
-	 * @throws CommException Exceção de comunicação
-	 * @throws EcfException Exceção do ECF
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public void venderItemAcrescimoPerc(String codigo, String descricao, String codAliquota, 
 			BigDecimal quantidade, BigDecimal valorUnitario, String unidade, BigDecimal acrescimo) 
@@ -1127,7 +1127,7 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método vende um item com desconto por valor no ECF
+	 * MÃ©todo vende um item com desconto por valor no ECF
 	 * @param codigo <i>String</i>
 	 * @param descricao <i>String</i>
 	 * @param codAliquota <i>String</i>
@@ -1135,8 +1135,8 @@ public class Ecf {
 	 * @param valorUnitario <i>BigDecimal</i>
 	 * @param unidade <i>String</i>
 	 * @param desconto <i>BigDecimal</i>
-	 * @throws CommException Exceção de comunicação
-	 * @throws EcfException Exceção do ECF
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public void venderItemDesconto(String codigo, String descricao, String codAliquota, 
 			BigDecimal quantidade, BigDecimal valorUnitario, String unidade, BigDecimal desconto) 
@@ -1149,7 +1149,7 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método vende item com desconto percentual no ECF
+	 * MÃ©todo vende item com desconto percentual no ECF
 	 * @param codigo <i>String</i>
 	 * @param descricao <i>String</i>
 	 * @param codAliquota <i>String</i>
@@ -1157,8 +1157,8 @@ public class Ecf {
 	 * @param valorUnitario <i>BigDecimal</i>
 	 * @param unidade <i>String</i>
 	 * @param desconto <i>BigDecimal</i>
-	 * @throws CommException Exceção de comunicação
-	 * @throws EcfException Exceção do ECF
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public void venderItemDescontoPerc(String codigo, String descricao, String codAliquota, 
 			BigDecimal quantidade, BigDecimal valorUnitario, String unidade, BigDecimal desconto) 
@@ -1171,12 +1171,12 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método imprime o TOTAL vendido no cupom até o momento
+	 * MÃ©todo imprime o TOTAL vendido no cupom atÃ© o momento
 	 * @param desconto <i>BigDecimal</i>
 	 * @param acrescimo <i>BigDecimal</i>
 	 * @param descAcresPerc <i>boolean</i>
-	 * @throws CommException Exceção de comunicação
-	 * @throws EcfException Exceção do ECF
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public void subtotalizarCupom(BigDecimal desconto, BigDecimal acrescimo, boolean descAcresPerc)
 			throws CommException, EcfException{
@@ -1188,12 +1188,12 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método imprime o valor pago com determinada forma de pagamento
+	 * MÃ©todo imprime o valor pago com determinada forma de pagamento
 	 * @param codFormaPagamento <i>String</i>
 	 * @param valor <i>BigDecimal</i>
 	 * @param observacao <i>String</i>
-	 * @throws CommException Exceção de comunicação
-	 * @throws EcfException Exceção do ECF
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public void efetuarPagamento(String codFormaPagamento, BigDecimal valor, String observacao) 
 			throws CommException, EcfException{
@@ -1205,10 +1205,10 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método finaliza o cupom aberto
+	 * MÃ©todo finaliza o cupom aberto
 	 * @param observacao <i>String</i>
-	 * @throws CommException Exceção de comunicação
-	 * @throws EcfException Exceção do ECF
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public void fecharCupom(String observacao)throws CommException, EcfException{
 		try {
@@ -1219,9 +1219,9 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método canleca cupom aberto ou o último cupom finalizado
-	 * @throws CommException Exceção de comunicação
-	 * @throws EcfException Exceção do ECF
+	 * MÃ©todo canleca cupom aberto ou o Ãºltimo cupom finalizado
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public void cancelarCupom() throws CommException, EcfException{
 		try {
@@ -1232,10 +1232,10 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método cancela determinado item do cupom aberto
+	 * MÃ©todo cancela determinado item do cupom aberto
 	 * @param item <i>int</i>
-	 * @throws CommException Exceção de comunicação
-	 * @throws EcfException Exceção do ECF
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public void cancelarItem(int item)throws CommException, EcfException{
 		try {
@@ -1246,9 +1246,9 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método cancela o último item registrado, caso o cupom esteja aberto
-	 * @throws CommException Exceção de comunicação
-	 * @throws EcfException Exceção do ECF
+	 * MÃ©todo cancela o Ãºltimo item registrado, caso o cupom esteja aberto
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public void cancelarUltimoItem()throws CommException, EcfException{
 		try {
@@ -1259,14 +1259,14 @@ public class Ecf {
 	}
 	
 	
-	// Cupom Não Fiscal --------------------------------------------------------	
+	// Cupom NÃ£o Fiscal --------------------------------------------------------	
 	/**
-	 * Método emite um cupom não fiscal  <i>(completo)</i>
+	 * MÃ©todo emite um cupom nÃ£o fiscal  <i>(completo)</i>
 	 * @param codTotalizadorNaoFiscal <i>String</i>
 	 * @param valor <i>BigDecimal</i>
 	 * @param codFormaPagamento <i>String</i>
-	 * @throws CommException Exceção de comunicação
-	 * @throws EcfException Exceção do ECF
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public void emitirNaoFiscal(String codTotalizadorNaoFiscal, BigDecimal valor, 
 			String codFormaPagamento) throws CommException, EcfException{
@@ -1278,12 +1278,12 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método abre um cupom não fiscal
+	 * MÃ©todo abre um cupom nÃ£o fiscal
 	 * @param cpfCnpj <i>String</i>
 	 * @param nomeConsumidor <i>String</i>
 	 * @param enderecoConsumidor <i>Strinf</i>
-	 * @throws CommException Exceção de comunicação
-	 * @throws EcfException Exceção do ECF
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public void abrirNaoFiscal(String cpfCnpj, String nomeConsumidor, 
 			String enderecoConsumidor) throws CommException, EcfException{
@@ -1295,11 +1295,11 @@ public class Ecf {
 			}
 	
 	/**
-	 * Método registra um item no cupom não fiscal aberto
+	 * MÃ©todo registra um item no cupom nÃ£o fiscal aberto
 	 * @param codTotalizadorNaoFiscal <i>String</i>
 	 * @param valor <i>BigDecimal</i>
-	 * @throws CommException Exceção de comunicação
-	 * @throws EcfException Exceção do ECF
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public void registrarItemNaoFiscal(String codTotalizadorNaoFiscal, BigDecimal valor) 
 			throws CommException, EcfException{
@@ -1311,12 +1311,12 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método subtotaliza Cupom Não fiscal
+	 * MÃ©todo subtotaliza Cupom NÃ£o fiscal
 	 * @param desconto <i>BigDecimal</i>
 	 * @param acrescimo <i>BigDecimal</i>
 	 * @param descAcresPerc <i>boolean</i>
-	 * @throws CommException Exceção de comunicação
-	 * @throws EcfException Exceção do ECF
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public void subtotalizarNaoFiscal(BigDecimal desconto, BigDecimal acrescimo, boolean descAcresPerc) 
 			throws CommException, EcfException{
@@ -1328,12 +1328,12 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método imprime o valor pago com determinada forma de pagamento
+	 * MÃ©todo imprime o valor pago com determinada forma de pagamento
 	 * @param codFormaPagamento <i>String</i>
 	 * @param valor <i>BigDecimal</i>
 	 * @param observacao <i>String</i>
-	 * @throws CommException Exceção de comunicação
-	 * @throws EcfException Exceção do ECF
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public void efetuarPagamentoNaoFiscal(String codFormaPagamento, BigDecimal valor, 
 			String observacao) throws CommException, EcfException{
@@ -1345,9 +1345,9 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método finaliza cupom não fiscal aberto
-	 * @throws CommException Exceção de comunicação
-	 * @throws EcfException Exceção do ECF
+	 * MÃ©todo finaliza cupom nÃ£o fiscal aberto
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public void fecharNaoFiscal() throws CommException, EcfException{
 		try {
@@ -1358,9 +1358,9 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método canleca cupom não fiscal aberto ou o último cupom não fiscal finalizado
-	 * @throws CommException Exceção de comunicação
-	 * @throws EcfException Exceção de ECF
+	 * MÃ©todo canleca cupom nÃ£o fiscal aberto ou o Ãºltimo cupom nÃ£o fiscal finalizado
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
+	 * @throws EcfException ExceÃ§Ã£o de ECF
 	 */
 	public void cancelarNaoFiscal() throws CommException, EcfException{
 		try {
@@ -1371,9 +1371,9 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método imprime segunda via de cupom não fiscal
-	 * @throws CommException Exceção de comunicação
-	 * @throws EcfException Exceção do ECF
+	 * MÃ©todo imprime segunda via de cupom nÃ£o fiscal
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public void reimprimirCupomNaoFiscal() throws CommException, EcfException{
 		try {
@@ -1383,13 +1383,13 @@ public class Ecf {
 		}
 	}
 	
-	//Comandos de autenticação--------------------------------------------------
+	//Comandos de autenticaÃ§Ã£o--------------------------------------------------
 	/**
-	 * Método imprime uma marca de autenticação em documentos
+	 * MÃ©todo imprime uma marca de autenticaÃ§Ã£o em documentos
 	 * @param linhasAvanco <i>int</i>
 	 * @param linhaAdicional <i>String</i>
-	 * @throws CommException Exceção de comunicação
-	 * @throws EcfException Exceção do ECF
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public void autenticarDocumento(int linhasAvanco, String linhaAdicional) 
 			throws CommException, EcfException{
@@ -1400,9 +1400,9 @@ public class Ecf {
 		}
 	}
 	
-	// Cupom Não Fiscal --------------------------------------------------------
+	// Cupom NÃ£o Fiscal --------------------------------------------------------
 	/**
-	 * Método emite comprovantes <i>(completo)</i>
+	 * MÃ©todo emite comprovantes <i>(completo)</i>
 	 * @param codFormaPagamento <i>String</i>
 	 * @param valor <i>BigDecimal</i>
 	 * @param COO <i>int</i>
@@ -1410,8 +1410,8 @@ public class Ecf {
 	 * @param nomeConsumidor <i>String</i>
 	 * @param enderecoConsumidor <i>String</i>
 	 * @param texto <i>String</i>
-	 * @throws CommException Exceção de comunicação
-	 * @throws EcfException Exceção de ECF
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
+	 * @throws EcfException ExceÃ§Ã£o de ECF
 	 */
 	public void emitirComprovante(String codFormaPagamento, BigDecimal valor, int COO, String cpfConsumidor, 
 			String nomeConsumidor, String enderecoConsumidor, String texto)throws CommException, EcfException{
@@ -1423,15 +1423,15 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método para abrir comprovantes
+	 * MÃ©todo para abrir comprovantes
 	 * @param codFormaPagamento <i>String</i>
 	 * @param valor <i>BigDecimal</i>
 	 * @param COO <i>int</i>
 	 * @param cpfConsumidor <i>String</i>
 	 * @param nomeConsumidor <i>String</i>
 	 * @param enderecoConsumidor <i>String</i>
-	 * @throws CommException Exceção de comunicação
-	 * @throws EcfException Exceção de ECF
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
+	 * @throws EcfException ExceÃ§Ã£o de ECF
 	 */
 	public void abrirComprovante(String codFormaPagamento, BigDecimal valor, 
 			int COO, String cpfConsumidor, String nomeConsumidor, String enderecoConsumidor)
@@ -1444,10 +1444,10 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método imprime linhas em um comprovante aberto
+	 * MÃ©todo imprime linhas em um comprovante aberto
 	 * @param texto <i>String</i>
-	 * @throws CommException Exceção de comunicação
-	 * @throws EcfException Exceção do ECF
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public void imprimirLinhaComprovante(String texto) throws CommException, EcfException{
 		try {
@@ -1458,9 +1458,9 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método finaliza comprovante aberto
-	 * @throws CommException Exceção de comunicação
-	 * @throws EcfException Exceção de ECF
+	 * MÃ©todo finaliza comprovante aberto
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
+	 * @throws EcfException ExceÃ§Ã£o de ECF
 	 */
 	public void fecharComprovante() throws CommException, EcfException{
 		try {
@@ -1471,12 +1471,12 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método estorna comprovante emitido
+	 * MÃ©todo estorna comprovante emitido
 	 * @param cpf <i>String</i>
 	 * @param nome <i>String</i>
 	 * @param endereco <i>String</i>
-	 * @throws CommException Exceção de comunicação
-	 * @throws EcfException Exceção do ECF
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public void estornarComprovante(String cpf, String nome, String endereco) 
 			throws CommException, EcfException{
@@ -1488,9 +1488,9 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método imprime segunda via do último comprovante emitido
-	 * @throws CommException Exceção de comunicação
-	 * @throws EcfException Exceção do ECF
+	 * MÃ©todo imprime segunda via do Ãºltimo comprovante emitido
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public void imprimirSegundaVia() throws CommException, EcfException{
 		try {
@@ -1503,7 +1503,7 @@ public class Ecf {
 	
 	//ALIQUOTAS-----------------------------------------------------------------
 	/**
-	 * Método busca todas as aliquotas cadastradas no ECF e retorna em uma lista
+	 * MÃ©todo busca todas as aliquotas cadastradas no ECF e retorna em uma lista
 	 * @return List - Lista de aliquotas 
 	 */
 	public List<Aliquota> getAliquotaList (){
@@ -1511,9 +1511,9 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método carrega as aliquotas do ECF 
-	 * @throws CommException Exceção de comunicação
-	 * @throws EcfException Exceção do ECF
+	 * MÃ©todo carrega as aliquotas do ECF 
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public void carregarAliquotas() throws CommException, EcfException{
 		try {
@@ -1524,12 +1524,12 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método programa uma nova aliquota no ECF
+	 * MÃ©todo programa uma nova aliquota no ECF
 	 * @param codigo <i>String</i>
 	 * @param aliquota <i>BigDecimal</i>
 	 * @param incidencia <i>String</i>
-	 * @throws CommException Exceção de comunicação
-	 * @throws EcfException Exceção do ECF
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public void programarAliquota(String codigo, BigDecimal aliquota, String incidencia) 
 			throws CommException, EcfException{
@@ -1541,10 +1541,10 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método busca uma aliquota a partir de um código
+	 * MÃ©todo busca uma aliquota a partir de um cÃ³digo
 	 * @param codigo <i>String</i>
 	 * @return Aliquota
-	 * @throws EcfException Exceção do ECF
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public Aliquota getAliquota(String codigo) throws EcfException{
 		try {
@@ -1556,7 +1556,7 @@ public class Ecf {
 	
 	//FORMAS DE PAGAMENTO--------------------------------------------------------
 	/**
-	 * Método busca todas as formas de pagamento cadastradas no ECF e retorna em uma lista
+	 * MÃ©todo busca todas as formas de pagamento cadastradas no ECF e retorna em uma lista
 	 * @return Lista de Formas de Pagamento
 	 */
 	public List<FormaPagamento> getFormasPagamentoList(){
@@ -1564,9 +1564,9 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método carrega as formas de pagamento do ECF 
-	 * @throws CommException Exceção de comunicação
-	 * @throws EcfException Exceção do ECF
+	 * MÃ©todo carrega as formas de pagamento do ECF 
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public void carregarFormasPagamento() throws CommException, EcfException{
 		try {
@@ -1577,12 +1577,12 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método programa uma nova forma de pagamento no ECF
+	 * MÃ©todo programa uma nova forma de pagamento no ECF
 	 * @param codigo <i>String</i>
 	 * @param descricao <i>String</i>
 	 * @param permiteVincular <i>boolean</i>
-	 * @throws CommException Exceção de comunicação
-	 * @throws EcfException Exceção do ECF
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public void programarFormaPagamento(String codigo, String descricao, boolean permiteVincular) 
 			throws CommException, EcfException{
@@ -1594,10 +1594,10 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método busca uma forma de pagamento a partir de um código
+	 * MÃ©todo busca uma forma de pagamento a partir de um cÃ³digo
 	 * @param codigo <i>String</i>
 	 * @return FormaPagamento
-	 * @throws EcfException Exceção do ECF
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public FormaPagamento getFormaPagamento(String codigo) throws EcfException{
 		try {
@@ -1608,10 +1608,10 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método busca uma forma de pagamento a partir de uma descrição
+	 * MÃ©todo busca uma forma de pagamento a partir de uma descriÃ§Ã£o
 	 * @param descricao <i>String</i>
 	 * @return FormaPagamento
-	 * @throws EcfException Exceção do ECF
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public FormaPagamento getFormaPagamentoPorDescricao(String descricao) throws EcfException{
 		try {
@@ -1624,7 +1624,7 @@ public class Ecf {
 	
 	//TOTALIZADORES----------------------------------------------------------------
 	/**
-	 * Método busca todas os totalizadores cadastradas no ECF e retorna em uma lista
+	 * MÃ©todo busca todas os totalizadores cadastradas no ECF e retorna em uma lista
 	 * @return
 	 */
 	public List<TotalizadorNaoFiscal> getTotalizadoresNaoFiscaisList(){
@@ -1632,9 +1632,9 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método carrega os totalizadores não fiscais do ECF 
-	 * @throws CommException Exceção de comunicação
-	 * @throws EcfException Exceção do ECF
+	 * MÃ©todo carrega os totalizadores nÃ£o fiscais do ECF 
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public void carregarTotalizadoresNaoFiscais() throws CommException, EcfException{
 		try {
@@ -1645,11 +1645,11 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método programa um novo totalizador não fiscal no ECF
+	 * MÃ©todo programa um novo totalizador nÃ£o fiscal no ECF
 	 * @param codigo <i>String</i>
 	 * @param descricao <i>String</i>
-	 * @throws CommException Exceção de comunicação
-	 * @throws EcfException Exceção do ECF
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public void programarTotalizadorNaoFiscal(String codigo, String descricao) 
 			throws CommException, EcfException{
@@ -1661,10 +1661,10 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método busca um totalizador não fiscal a partir de um código
+	 * MÃ©todo busca um totalizador nÃ£o fiscal a partir de um cÃ³digo
 	 * @param codigo <i>String</i>
 	 * @return TotalizadorNaoFiscal
-	 * @throws EcfException Exceção do ECF
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public TotalizadorNaoFiscal getTotalizadorNaoFiscal(String codigo) throws EcfException{
 		try {
@@ -1675,10 +1675,10 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método busca um totalizador não fiscal a partir de uam descrição
+	 * MÃ©todo busca um totalizador nÃ£o fiscal a partir de uam descriÃ§Ã£o
 	 * @param descricao <i>String</i>
 	 * @return TotalizadorNaoFiscal
-	 * @throws EcfException Exceção do ECF
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public TotalizadorNaoFiscal getTotalizadorNaoFiscalPorDescricao(String descricao) throws EcfException{
 		try {
@@ -1691,10 +1691,10 @@ public class Ecf {
 	
 	//----------------------------------------------------------------------------
 	/**
-	 * Método programa no ECF o nome da moeda no singular
+	 * MÃ©todo programa no ECF o nome da moeda no singular
 	 * @param nome <i>String</i>
-	 * @throws CommException Eceção de comunicação
-	 * @throws EcfException Exceção do ECF
+	 * @throws CommException EceÃ§Ã£o de comunicaÃ§Ã£o
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public void programarMoedaSingular(String nome) throws CommException, EcfException{
 		try {
@@ -1705,10 +1705,10 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método programa no ECF o nome da moeda no plural
+	 * MÃ©todo programa no ECF o nome da moeda no plural
 	 * @param nome <i>String</i>
-	 * @throws CommException Exceção de comunicação
-	 * @throws EcfException Exceção do ECF
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public void programarMoedaPlural(String nome) throws CommException, EcfException{
 		try {
@@ -1719,15 +1719,15 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método imprime cheques no ECF de acordo com os modelos dos banco 
+	 * MÃ©todo imprime cheques no ECF de acordo com os modelos dos banco 
 	 * @param banco <i>String</i>
 	 * @param valor <i>BigDecimal</i>
 	 * @param favorecido <i>String</i>
 	 * @param cidade <i>String</i>
 	 * @param data <i>Date</i>
 	 * @param observacao <i>Straing</i>
-	 * @throws CommException Exceção de comunicação
-	 * @throws EcfException Exceção do ECF
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public void imprimirCheque(String banco, BigDecimal valor, String favorecido,
 			String cidade, Date data, String observacao) throws CommException, EcfException{
@@ -1739,9 +1739,9 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método cancela a impressão no cheque. Esse método só será executado se o ECF estiver aguardando o Cheque
-	 * @throws CommException Exceção de comunicação
-	 * @throws EcfException Exceção do ECF
+	 * MÃ©todo cancela a impressÃ£o no cheque. Esse mÃ©todo sÃ³ serÃ¡ executado se o ECF estiver aguardando o Cheque
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public void cancelarImpressaoCheque() throws CommException, EcfException{
 		try {
@@ -1752,12 +1752,12 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método verifica se o ECF está aguardando a colocação do cheque para impressão
+	 * MÃ©todo verifica se o ECF estÃ¡ aguardando a colocaÃ§Ã£o do cheque para impressÃ£o
 	 * @return boolean
 	 * <li> True - Caso esteja aguardando
-	 * <li> False - Caso não esteja aguardando
-	 * @throws CommException Exceção de comunicação
-	 * @throws EcfException Exceção do ECF
+	 * <li> False - Caso nÃ£o esteja aguardando
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public boolean isAguardandoCheque() throws CommException, EcfException{
 		try {
@@ -1768,12 +1768,12 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método verifica se o ECF está imprimindo cheque
+	 * MÃ©todo verifica se o ECF estÃ¡ imprimindo cheque
 	 * @return boolean
 	 * <li> True - Caso estaja imprimindo cheque
-	 * <li> False - Caso não esteja imprimindo cheque
-	 * @throws CommException Exceção de comunicação
-	 * @throws EcfException Exceção do ECF
+	 * <li> False - Caso nÃ£o esteja imprimindo cheque
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public boolean isImprimindoCheque() throws CommException, EcfException{
 		try {
@@ -1784,10 +1784,10 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método faz com que o ECF pule linhas em sua impressão
+	 * MÃ©todo faz com que o ECF pule linhas em sua impressÃ£o
 	 * @param qtdeLinhas <i>int</i>
-	 * @throws CommException Exceção de comunicação
-	 * @throws EcfException Exceção do ECF
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public void pularLinhas(int qtdeLinhas) throws CommException, EcfException{
 		try {
@@ -1798,10 +1798,10 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método faz com que o ECF corte o papel de impressão
+	 * MÃ©todo faz com que o ECF corte o papel de impressÃ£o
 	 * @param corteParcial <i>boolean</i>
-	 * @throws CommException Exceção de comunicação
-	 * @throws EcfException Exceção do ECF
+	 * @throws CommException ExceÃ§Ã£o de comunicaÃ§Ã£o
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public void cortarPapel(boolean corteParcial) throws CommException, EcfException{
 		try {
@@ -1814,8 +1814,8 @@ public class Ecf {
 	
 	//----------------------------------------------------------------------------
 	/**
-	 * Método Carrega os layouts de cheque em uma lista
-	 * @throws EcfException Exceção do ECF
+	 * MÃ©todo Carrega os layouts de cheque em uma lista
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public void carregarLayoutCheque()throws EcfException{
 		try {
@@ -1826,9 +1826,9 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método carrega os layouts de cheques em uma lista a partir de um XML
+	 * MÃ©todo carrega os layouts de cheques em uma lista a partir de um XML
 	 * @param xml <i>String</i>
-	 * @throws EcfException Exceção do ECF
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public void carregarLayoutCheque(String xml)throws EcfException{
 		try {
@@ -1839,10 +1839,10 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método carrega os layouts de cheques a partir do codigo do banco
+	 * MÃ©todo carrega os layouts de cheques a partir do codigo do banco
 	 * @param banco <i>String</i>
 	 * @return LayoutCheque
-	 * @throws EcfException Exceção do ECF
+	 * @throws EcfException ExceÃ§Ã£o do ECF
 	 */
 	public LayoutCheque getLayoutCheque(String banco) throws EcfException{
 		try {
@@ -1853,7 +1853,7 @@ public class Ecf {
 	}
 	
 	/**
-	 * Método insere um novo layout de cheque
+	 * MÃ©todo insere um novo layout de cheque
 	 * @param layouts <i>List</i>
 	 * @throws EcfException
 	 */

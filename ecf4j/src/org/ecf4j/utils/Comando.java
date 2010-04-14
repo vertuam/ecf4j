@@ -1,30 +1,30 @@
 /**
- * Ecf4J - framework Java para interaÁ„o com equipamentos de AutomaÁ„o Comercial 
+ * Ecf4J - framework Java para intera√ß√£o com equipamentos de Automa√ß√£o Comercial 
  * 
  * Direitos Autorais Reservados (c) 2009-2010 ecf4j.org
  *
- * Autores: Agner GerÙnimo Munhoz, 
+ * Autores: Agner Ger√¥nimo Munhoz, 
  *          Pablo Henrique Fassina, 
  *          Rafael Pasqualini de Freitas,
  *          Wellington Carvalho
  *
- * VocÍ pode obter a ˙ltima vers„o desse arquivo na pagina do Ecf4J.org
- * disponÌvel em: <http://www.ecf4j.org> 21/09/2009.
+ * Voc√™ pode obter a √∫ltima vers√£o desse arquivo na pagina do Ecf4J.org
+ * dispon√≠vel em: <http://www.ecf4j.org> 21/09/2009.
  *
- * Este arquivo È parte da framework Ecf4J
+ * Este arquivo √© parte da framework Ecf4J
  *
- * Ecf4J È um framework livre; vocÍ pode redistribui-lo e/ou 
- * modifica-lo dentro dos termos da LicenÁa P˙blica Geral Menor GNU como 
- * publicada pela FundaÁ„o do Software Livre (FSF); na vers„o 2.1 da 
- * LicenÁa.
+ * Ecf4J √© um framework livre; voc√™ pode redistribui-lo e/ou 
+ * modifica-lo dentro dos termos da Licen√ßa P√∫blica Geral Menor GNU como 
+ * publicada pela Funda√ß√£o do Software Livre (FSF); na vers√£o 2.1 da 
+ * Licen√ßa.
  *
- * Este framework È distribuido na esperanÁa que possa ser  util, 
- * mas SEM NENHUMA GARANTIA; sem uma garantia implicita de ADEQUA«¬O a qualquer
- * MERCADO ou APLICA«√O EM PARTICULAR. Veja a
- * LicenÁa P˙blica Geral GNU para maiores detalhes.
+ * Este framework √© distribuido na esperan√ßa que possa ser  util, 
+ * mas SEM NENHUMA GARANTIA; sem uma garantia implicita de ADEQUA√á√ÇO a qualquer
+ * MERCADO ou APLICA√á√ÉO EM PARTICULAR. Veja a
+ * Licen√ßa P√∫blica Geral GNU para maiores detalhes.
  *
- * VocÍ deve ter recebido uma cÛpia da LicenÁa P˙blica Geral Menor GNU
- * junto com este framework, se n„o, escreva para a FundaÁ„o do Software
+ * Voc√™ deve ter recebido uma c√≥pia da Licen√ßa P√∫blica Geral Menor GNU
+ * junto com este framework, se n√£o, escreva para a Funda√ß√£o do Software
  * Livre(FSF) Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  */
 package org.ecf4j.utils;
@@ -72,28 +72,28 @@ public class Comando {
 		value = "";
 	}
 	private String trataString(String arg){
-		arg = arg.replaceAll("¡", "A"); arg = arg.replaceAll("·", "a");
-		arg = arg.replaceAll("¿", "A"); arg = arg.replaceAll("‡", "a");
-		arg = arg.replaceAll("¬", "A"); arg = arg.replaceAll("‚", "a");
-		arg = arg.replaceAll("√", "A"); arg = arg.replaceAll("„", "a");
-		arg = arg.replaceAll("ƒ", "A"); arg = arg.replaceAll("‰", "a");
-		arg = arg.replaceAll("…", "A"); arg = arg.replaceAll("È", "a");
-		arg = arg.replaceAll("»", "A"); arg = arg.replaceAll("Ë", "a");
-		arg = arg.replaceAll(" ", "A"); arg = arg.replaceAll("Í", "a");
-		arg = arg.replaceAll("À", "A"); arg = arg.replaceAll("Î", "a");
-		arg = arg.replaceAll("Õ", "I"); arg = arg.replaceAll("Ì", "i");
-		arg = arg.replaceAll("Ã", "I"); arg = arg.replaceAll("Ï", "i");
-		arg = arg.replaceAll("Œ", "I"); arg = arg.replaceAll("Ó", "i");
-		arg = arg.replaceAll("œ", "I"); arg = arg.replaceAll("Ô", "i");
-		arg = arg.replaceAll("”", "O"); arg = arg.replaceAll("Û", "o");
-		arg = arg.replaceAll("“", "O"); arg = arg.replaceAll("Ú", "o");
-		arg = arg.replaceAll("‘", "O"); arg = arg.replaceAll("Ù", "o");
-		arg = arg.replaceAll("’", "O"); arg = arg.replaceAll("ı", "o");
-		arg = arg.replaceAll("÷", "O"); arg = arg.replaceAll("ˆ", "o");
-		arg = arg.replaceAll("⁄", "U"); arg = arg.replaceAll("˙", "u");
-		arg = arg.replaceAll("Ÿ", "U"); arg = arg.replaceAll("˘", "u");
-		arg = arg.replaceAll("€", "U"); arg = arg.replaceAll("˚", "u");
-		arg = arg.replaceAll("‹", "U"); arg = arg.replaceAll("¸", "u");
+		arg = arg.replaceAll("√Å", "A"); arg = arg.replaceAll("√°", "a");
+		arg = arg.replaceAll("√Ä", "A"); arg = arg.replaceAll("√†", "a");
+		arg = arg.replaceAll("√Ç", "A"); arg = arg.replaceAll("√¢", "a");
+		arg = arg.replaceAll("√É", "A"); arg = arg.replaceAll("√£", "a");
+		arg = arg.replaceAll("√Ñ", "A"); arg = arg.replaceAll("√§", "a");
+		arg = arg.replaceAll("√â", "A"); arg = arg.replaceAll("√©", "a");
+		arg = arg.replaceAll("√à", "A"); arg = arg.replaceAll("√®", "a");
+		arg = arg.replaceAll("√ä", "A"); arg = arg.replaceAll("√™", "a");
+		arg = arg.replaceAll("√ã", "A"); arg = arg.replaceAll("√´", "a");
+		arg = arg.replaceAll("√ç", "I"); arg = arg.replaceAll("√≠", "i");
+		arg = arg.replaceAll("√å", "I"); arg = arg.replaceAll("√¨", "i");
+		arg = arg.replaceAll("√é", "I"); arg = arg.replaceAll("√Æ", "i");
+		arg = arg.replaceAll("√è", "I"); arg = arg.replaceAll("√Ø", "i");
+		arg = arg.replaceAll("√ì", "O"); arg = arg.replaceAll("√≥", "o");
+		arg = arg.replaceAll("√í", "O"); arg = arg.replaceAll("√≤", "o");
+		arg = arg.replaceAll("√î", "O"); arg = arg.replaceAll("√¥", "o");
+		arg = arg.replaceAll("√ï", "O"); arg = arg.replaceAll("√µ", "o");
+		arg = arg.replaceAll("√ñ", "O"); arg = arg.replaceAll("√∂", "o");
+		arg = arg.replaceAll("√ö", "U"); arg = arg.replaceAll("√∫", "u");
+		arg = arg.replaceAll("√ô", "U"); arg = arg.replaceAll("√π", "u");
+		arg = arg.replaceAll("√õ", "U"); arg = arg.replaceAll("√ª", "u");
+		arg = arg.replaceAll("√ú", "U"); arg = arg.replaceAll("√º", "u");
 		return arg;
 	}
 	

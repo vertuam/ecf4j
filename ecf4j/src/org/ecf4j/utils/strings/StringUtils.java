@@ -1,30 +1,30 @@
 /**
- * Ecf4J - framework Java para interaÁ„o com equipamentos de AutomaÁ„o Comercial 
+ * Ecf4J - framework Java para intera√ß√£o com equipamentos de Automa√ß√£o Comercial 
  * 
  * Direitos Autorais Reservados (c) 2009-2010 ecf4j.org
  *
- * Autores: Agner GerÙnimo Munhoz, 
+ * Autores: Agner Ger√¥nimo Munhoz, 
  *          Pablo Henrique Fassina, 
  *          Rafael Pasqualini de Freitas,
  *          Wellington Carvalho
  *
- * VocÍ pode obter a ˙ltima vers„o desse arquivo na pagina do Ecf4J.org
- * disponÌvel em: <http://www.ecf4j.org> 21/09/2009.
+ * Voc√™ pode obter a √∫ltima vers√£o desse arquivo na pagina do Ecf4J.org
+ * dispon√≠vel em: <http://www.ecf4j.org> 21/09/2009.
  *
- * Este arquivo È parte da framework Ecf4J
+ * Este arquivo √© parte da framework Ecf4J
  *
- * Ecf4J È um framework livre; vocÍ pode redistribui-lo e/ou 
- * modifica-lo dentro dos termos da LicenÁa P˙blica Geral Menor GNU como 
- * publicada pela FundaÁ„o do Software Livre (FSF); na vers„o 2.1 da 
- * LicenÁa.
+ * Ecf4J √© um framework livre; voc√™ pode redistribui-lo e/ou 
+ * modifica-lo dentro dos termos da Licen√ßa P√∫blica Geral Menor GNU como 
+ * publicada pela Funda√ß√£o do Software Livre (FSF); na vers√£o 2.1 da 
+ * Licen√ßa.
  *
- * Este framework È distribuido na esperanÁa que possa ser  util, 
- * mas SEM NENHUMA GARANTIA; sem uma garantia implicita de ADEQUA«¬O a qualquer
- * MERCADO ou APLICA«√O EM PARTICULAR. Veja a
- * LicenÁa P˙blica Geral GNU para maiores detalhes.
+ * Este framework √© distribuido na esperan√ßa que possa ser  util, 
+ * mas SEM NENHUMA GARANTIA; sem uma garantia implicita de ADEQUA√á√ÇO a qualquer
+ * MERCADO ou APLICA√á√ÉO EM PARTICULAR. Veja a
+ * Licen√ßa P√∫blica Geral GNU para maiores detalhes.
  *
- * VocÍ deve ter recebido uma cÛpia da LicenÁa P˙blica Geral Menor GNU
- * junto com este framework, se n„o, escreva para a FundaÁ„o do Software
+ * Voc√™ deve ter recebido uma c√≥pia da Licen√ßa P√∫blica Geral Menor GNU
+ * junto com este framework, se n√£o, escreva para a Funda√ß√£o do Software
  * Livre(FSF) Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  */
 package org.ecf4j.utils.strings;
@@ -127,59 +127,59 @@ public class StringUtils {
 	
 	public static String strToEcf(String str){
 		if ((str!=null) && (str.length() > 0)){
-			str = str.replaceAll("·", "a");
-			str = str.replaceAll("È", "e");
-			str = str.replaceAll("Ì", "i");
-			str = str.replaceAll("Û", "o");
-			str = str.replaceAll("˙", "u");
-			str = str.replaceAll("‚", "a");
-			str = str.replaceAll("Í", "e");
-			str = str.replaceAll("Ó", "i");
-			str = str.replaceAll("Ù", "o");
-			str = str.replaceAll("˚", "u");
-			str = str.replaceAll("„", "a");
-			str = str.replaceAll("ı", "o");
-			str = str.replaceAll("‰", "a");
-			str = str.replaceAll("Î", "e");
-			str = str.replaceAll("Ô", "i");
-			str = str.replaceAll("ˆ", "o");
-			str = str.replaceAll("¸", "u");
-			str = str.replaceAll("Á", "c");
+			str = str.replaceAll("√°", "a");
+			str = str.replaceAll("√©", "e");
+			str = str.replaceAll("√≠", "i");
+			str = str.replaceAll("√≥", "o");
+			str = str.replaceAll("√∫", "u");
+			str = str.replaceAll("√¢", "a");
+			str = str.replaceAll("√™", "e");
+			str = str.replaceAll("√Æ", "i");
+			str = str.replaceAll("√¥", "o");
+			str = str.replaceAll("√ª", "u");
+			str = str.replaceAll("√£", "a");
+			str = str.replaceAll("√µ", "o");
+			str = str.replaceAll("√§", "a");
+			str = str.replaceAll("√´", "e");
+			str = str.replaceAll("√Ø", "i");
+			str = str.replaceAll("√∂", "o");
+			str = str.replaceAll("√º", "u");
+			str = str.replaceAll("√ß", "c");
 
-			str = str.replaceAll("‡", "a");
-			str = str.replaceAll("Ë", "e");
-			str = str.replaceAll("Ï", "i");
-			str = str.replaceAll("Ú", "o");
-			str = str.replaceAll("˘", "u");
+			str = str.replaceAll("√†", "a");
+			str = str.replaceAll("√®", "e");
+			str = str.replaceAll("√¨", "i");
+			str = str.replaceAll("√≤", "o");
+			str = str.replaceAll("√π", "u");
 			
-			str = str.replaceAll("¡", "A");
-			str = str.replaceAll("…", "E");
-			str = str.replaceAll("Õ", "I");
-			str = str.replaceAll("”", "O");
-			str = str.replaceAll("⁄", "U");
-			str = str.replaceAll("¬", "A");
-			str = str.replaceAll(" ", "E");
-			str = str.replaceAll("Œ", "I");
-			str = str.replaceAll("‘", "O");
-			str = str.replaceAll("€", "U");
-			str = str.replaceAll("√", "A");
-			str = str.replaceAll("’", "O");
-			str = str.replaceAll("ƒ", "A");
-			str = str.replaceAll("À", "E");
-			str = str.replaceAll("œ", "I");
-			str = str.replaceAll("÷", "O");
-			str = str.replaceAll("‹", "U");
-			str = str.replaceAll("«", "C");
+			str = str.replaceAll("√Å", "A");
+			str = str.replaceAll("√â", "E");
+			str = str.replaceAll("√ç", "I");
+			str = str.replaceAll("√ì", "O");
+			str = str.replaceAll("√ö", "U");
+			str = str.replaceAll("√Ç", "A");
+			str = str.replaceAll("√ä", "E");
+			str = str.replaceAll("√é", "I");
+			str = str.replaceAll("√î", "O");
+			str = str.replaceAll("√õ", "U");
+			str = str.replaceAll("√É", "A");
+			str = str.replaceAll("√ï", "O");
+			str = str.replaceAll("√Ñ", "A");
+			str = str.replaceAll("√ã", "E");
+			str = str.replaceAll("√è", "I");
+			str = str.replaceAll("√ñ", "O");
+			str = str.replaceAll("√ú", "U");
+			str = str.replaceAll("√á", "C");
 
-			str = str.replaceAll("¿", "A");
-			str = str.replaceAll("»", "E");
-			str = str.replaceAll("Ã", "I");
-			str = str.replaceAll("“", "O");
-			str = str.replaceAll("Ÿ", "U");
+			str = str.replaceAll("√Ä", "A");
+			str = str.replaceAll("√à", "E");
+			str = str.replaceAll("√å", "I");
+			str = str.replaceAll("√í", "O");
+			str = str.replaceAll("√ô", "U");
 			
-			str = str.replaceAll("™", "a.");
-			str = str.replaceAll("∫", "o.");
-			str = str.replaceAll("∞", "o.");
+			str = str.replaceAll("¬™", "a.");
+			str = str.replaceAll("¬∫", "o.");
+			str = str.replaceAll("¬∞", "o.");
 			char c = ' ';
 			for(int i = 0; i < str.length(); i++){
 				c = str.charAt(i);
@@ -227,12 +227,12 @@ public class StringUtils {
 	}
 
 	/**
-	 * Retorna String formatada para o Ecf dividida em p·ginas.
+	 * Retorna String formatada para o Ecf dividida em p√°ginas.
 	 * @param str - String de entrada
-	 * @param pagina - N˙mero da p·gina apartir de 0
-	 * @param len - Tamanho em caracters da p·gina
+	 * @param pagina - N√∫mero da p√°gina apartir de 0
+	 * @param len - Tamanho em caracters da p√°gina
 	 * @return Retorna uma String com len ou menos caracters ou 
-	 * String em branco caso n„o exista a p·gina 
+	 * String em branco caso n√£o exista a p√°gina 
 	 */
 	public static String strToEcf(String str, int pagina, int len){
 		pagina *= len;

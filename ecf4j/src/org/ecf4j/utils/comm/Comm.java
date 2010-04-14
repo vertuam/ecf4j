@@ -1,33 +1,30 @@
 /**
- * Ecf4J - framework Java para interação com equipamentos de Automação Comercial 
+ * Ecf4J - framework Java para interaÃ§Ã£o com equipamentos de AutomaÃ§Ã£o Comercial 
  * 
  * Direitos Autorais Reservados (c) 2009-2010 ecf4j.org
  *
- * Autores: Agner Gerônimo Munhoz, 
+ * Autores: Agner GerÃ´nimo Munhoz, 
  *          Pablo Henrique Fassina, 
  *          Rafael Pasqualini de Freitas,
  *          Wellington Carvalho
  *
- * Você pode obter a última versão desse arquivo na pagina do Ecf4J.org
- * disponível em: <http://www.ecf4j.org> 21/09/2009.
+ * VocÃª pode obter a Ãºltima versÃ£o desse arquivo na pagina do Ecf4J.org
+ * disponÃ­vel em: <http://www.ecf4j.org> 21/09/2009.
  *
- * Esse arquivo usa a biblioteca RXTX Copyright 1997-2007 by Trent Jarvi.
- * disponível em: <http://users.frii.com/jarvi/rxtx/index.html> 21/09/2009.
+ * Este arquivo Ã© parte da framework Ecf4J
  *
- * Este arquivo é parte da framework Ecf4J
+ * Ecf4J Ã© um framework livre; vocÃª pode redistribui-lo e/ou 
+ * modifica-lo dentro dos termos da LicenÃ§a PÃºblica Geral Menor GNU como 
+ * publicada pela FundaÃ§Ã£o do Software Livre (FSF); na versÃ£o 2.1 da 
+ * LicenÃ§a.
  *
- * Ecf4J é um framework livre; você pode redistribui-lo e/ou 
- * modifica-lo dentro dos termos da Licença Pública Geral Menor GNU como 
- * publicada pela Fundação do Software Livre (FSF); na versão 2.1 da 
- * Licença.
+ * Este framework Ã© distribuido na esperanÃ§a que possa ser  util, 
+ * mas SEM NENHUMA GARANTIA; sem uma garantia implicita de ADEQUAÃ‡Ã‚O a qualquer
+ * MERCADO ou APLICAÃ‡ÃƒO EM PARTICULAR. Veja a
+ * LicenÃ§a PÃºblica Geral GNU para maiores detalhes.
  *
- * Este framework é distribuido na esperança que possa ser  util, 
- * mas SEM NENHUMA GARANTIA; sem uma garantia implicita de ADEQUAÇÂO a qualquer
- * MERCADO ou APLICAÇÃO EM PARTICULAR. Veja a
- * Licença Pública Geral GNU para maiores detalhes.
- *
- * Você deve ter recebido uma cópia da Licença Pública Geral Menor GNU
- * junto com este framework, se não, escreva para a Fundação do Software
+ * VocÃª deve ter recebido uma cÃ³pia da LicenÃ§a PÃºblica Geral Menor GNU
+ * junto com este framework, se nÃ£o, escreva para a FundaÃ§Ã£o do Software
  * Livre(FSF) Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  */
 package org.ecf4j.utils.comm;
@@ -77,13 +74,13 @@ public class Comm {
 	}
 	/**
 	 * @return the commEnabled
-	 * Retorna true se a comunicaï¿½ï¿½o estiver ativa ou false caso contrario
+	 * Retorna true se a comunicaÃ§Ã£o estiver ativa ou false caso contrario
 	 */
 	public boolean isCommEnabled() {
 		return commEnabled;
 	}
 	/**
-	 * Abre comunicação pela porta serial/paralela
+	 * Abre comunicaÃ§Ã£o pela porta serial/paralela
 	 * @param porta
 	 * @param velocidade
 	 * @param bitsDados
@@ -171,7 +168,7 @@ public class Comm {
 		commPort.close();
 	}
 	
-	private void write(String value) throws CommException { // não funciona
+	private void write(String value) throws CommException { // nÃ£o funciona
         if (value.length()>0)
 			try {
 				out.write(value.getBytes(),0,value.length()-2);

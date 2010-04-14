@@ -1,30 +1,30 @@
 /**
- * Ecf4J - framework Java para intera��o com equipamentos de Automa��o Comercial 
+ * Ecf4J - framework Java para interação com equipamentos de Automação Comercial 
  * 
  * Direitos Autorais Reservados (c) 2009-2010 ecf4j.org
  *
- * Autores: Agner Ger�nimo Munhoz, 
+ * Autores: Agner Gerônimo Munhoz, 
  *          Pablo Henrique Fassina, 
  *          Rafael Pasqualini de Freitas,
  *          Wellington Carvalho
  *
- * Voc� pode obter a �ltima vers�o desse arquivo na pagina do Ecf4J.org
- * dispon�vel em: <http://www.ecf4j.org> 21/09/2009.
+ * Você pode obter a última versão desse arquivo na pagina do Ecf4J.org
+ * disponível em: <http://www.ecf4j.org> 21/09/2009.
  *
- * Este arquivo � parte da framework Ecf4J
+ * Este arquivo é parte da framework Ecf4J
  *
- * Ecf4J � um framework livre; voc� pode redistribui-lo e/ou 
- * modifica-lo dentro dos termos da Licen�a P�blica Geral Menor GNU como 
- * publicada pela Funda��o do Software Livre (FSF); na vers�o 2.1 da 
- * Licen�a.
+ * Ecf4J é um framework livre; você pode redistribui-lo e/ou 
+ * modifica-lo dentro dos termos da Licença Pública Geral Menor GNU como 
+ * publicada pela Fundação do Software Livre (FSF); na versão 2.1 da 
+ * Licença.
  *
- * Este framework � distribuido na esperan�a que possa ser  util, 
- * mas SEM NENHUMA GARANTIA; sem uma garantia implicita de ADEQUA��O a qualquer
- * MERCADO ou APLICA��O EM PARTICULAR. Veja a
- * Licen�a P�blica Geral GNU para maiores detalhes.
+ * Este framework é distribuido na esperança que possa ser  util, 
+ * mas SEM NENHUMA GARANTIA; sem uma garantia implicita de ADEQUAÇÂO a qualquer
+ * MERCADO ou APLICAÇÃO EM PARTICULAR. Veja a
+ * Licença Pública Geral GNU para maiores detalhes.
  *
- * Voc� deve ter recebido uma c�pia da Licen�a P�blica Geral Menor GNU
- * junto com este framework, se n�o, escreva para a Funda��o do Software
+ * Você deve ter recebido uma cópia da Licença Pública Geral Menor GNU
+ * junto com este framework, se não, escreva para a Fundação do Software
  * Livre(FSF) Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  */
 package org.ecf4j.ecnf.bematech;
@@ -91,8 +91,8 @@ public abstract class EcnfBematechAbstract extends EcnfAbstract {
 	
 	
 	//--------------------------------------------------------------------------
-	//IMPRESS�O
-	/* Implementado nas classes espec�ficas
+	//IMPRESSÃO
+	/* Implementado nas classes específicas
 	@Override
 	protected void imprimirLinhaAbstract(String linha) throws CommException {
 		String ss[] = linha.split("\n");
@@ -113,7 +113,7 @@ public abstract class EcnfBematechAbstract extends EcnfAbstract {
 	}
 	*/
 	
-	/* Implementado nas classes espec�ficas
+	/* Implementado nas classes específicas
 	@Override
 	protected void imprimirLinhaExpandidaAbstract(String linha) throws CommException {
 		String ss[] = linha.split("\n");
@@ -141,7 +141,7 @@ public abstract class EcnfBematechAbstract extends EcnfAbstract {
 		return str1 + str2;
 	}
 	
-	/*Implementado nas classes espec�ficas 
+	/* Implementado nas classes específicas 
 	public void imprimirItem(int numItem, String codProduto, String descProduto, 
 			String un, BigDecimal qtdeItem, BigDecimal valorItem) throws CommException{
 		String item = IntegerUtils.intToStr(numItem, 3) + " ";
@@ -162,13 +162,13 @@ public abstract class EcnfBematechAbstract extends EcnfAbstract {
 	}
 	*/
 	
-	/* Implementado nas classes espec�ficas
+	/* Implementado nas classes específicas
 	public void imprimirLinha(String str1, String str2) throws CommException{
 		
 	}
 	*/
 	
-	/* Implementado nas classes espec�ficas
+	/* Implementado nas classes específicas
 	public void imprimirLinhaExpandida(String str1, String str2) throws CommException{
 		int len = 24 - str1.length();
 		str2 = StringUtils.formatStr(str2, len, StringUtils.ALINHAMENTO_DIREITA);
@@ -176,7 +176,7 @@ public abstract class EcnfBematechAbstract extends EcnfAbstract {
 	}
 	*/
 	
-	/* Implementado nas classes espec�ficas
+	/* Implementado nas classes específicas
 	@Override
 	public void imprimirSeparador() throws CommException {
 		//imprimirLinhaAbstract("                                                ");	
@@ -185,13 +185,13 @@ public abstract class EcnfBematechAbstract extends EcnfAbstract {
 	*/
 
 	//--------------------------------------------------------------------------
-	//CONFIGURA��O
+	//CONFIGURAÇÃO
 	@Override
 	protected void ativarItalicoAbstract() throws CommException {
 		executaComando(preparaComando(ByteUtils.newByteArray(27,52)));
 	}
 	
-	/* Implementado nas classes espec�ficas
+	/* Implementado nas classes específicas
 	@Override
 	protected void desativarItalicoAbstract() throws CommException{
 		executaComando(preparaComando(ByteUtils.newByteArray(27,53)));
@@ -213,14 +213,14 @@ public abstract class EcnfBematechAbstract extends EcnfAbstract {
 		executaComando(preparaComando(ByteUtils.newByteArray(27,69)));		
 	}
 
-	/* Implementado nas classes espec�ficas
+	/* Implementado nas classes específicas
 	@Override
 	protected void desativarNegritoAbstract() throws CommException{
 		executaComando(preparaComando(ByteUtils.newByteArray(27,70)));		
 	}
 	*/
 	
-	/* Implementado nas classes espec�ficas
+	/* Implementado nas classes específicas
 	@Override
 	public void ativarModoNormal() throws CommException{
 		executaComando(preparaComando(ByteUtils.newByteArray(27,77)));		
@@ -238,7 +238,7 @@ public abstract class EcnfBematechAbstract extends EcnfAbstract {
 	}
 	
 	//----------------------------------------------------------------
-	/* Implementado nas classes espec�ficas
+	/* Implementado nas classes específicas
 	@Override
 	public void abrirGaveta() throws CommException {
 		executaComando(preparaComando(ByteUtils.newByteArray(27,118, 100)));		

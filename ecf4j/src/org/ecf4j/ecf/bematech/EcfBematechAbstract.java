@@ -1,30 +1,30 @@
 /**
- * Ecf4J - framework Java para interação com equipamentos de Automação Comercial 
+ * Ecf4J - framework Java para interaÃ§Ã£o com equipamentos de AutomaÃ§Ã£o Comercial 
  * 
  * Direitos Autorais Reservados (c) 2009-2010 ecf4j.org
  *
- * Autores: Agner Gerônimo Munhoz, 
+ * Autores: Agner GerÃ´nimo Munhoz, 
  *          Pablo Henrique Fassina, 
  *          Rafael Pasqualini de Freitas,
  *          Wellington Carvalho
  *
- * Você pode obter a última versão desse arquivo na pagina do Ecf4J.org
- * disponível em: <http://www.ecf4j.org> 21/09/2009.
+ * VocÃª pode obter a Ãºltima versÃ£o desse arquivo na pagina do Ecf4J.org
+ * disponÃ­vel em: <http://www.ecf4j.org> 21/09/2009.
  *
- * Este arquivo é parte da framework Ecf4J
+ * Este arquivo Ã© parte da framework Ecf4J
  *
- * Ecf4J é um framework livre; você pode redistribui-lo e/ou 
- * modifica-lo dentro dos termos da Licença Pública Geral Menor GNU como 
- * publicada pela Fundação do Software Livre (FSF); na versão 2.1 da 
- * Licença.
+ * Ecf4J Ã© um framework livre; vocÃª pode redistribui-lo e/ou 
+ * modifica-lo dentro dos termos da LicenÃ§a PÃºblica Geral Menor GNU como 
+ * publicada pela FundaÃ§Ã£o do Software Livre (FSF); na versÃ£o 2.1 da 
+ * LicenÃ§a.
  *
- * Este framework é distribuido na esperança que possa ser  util, 
- * mas SEM NENHUMA GARANTIA; sem uma garantia implicita de ADEQUAÇÂO a qualquer
- * MERCADO ou APLICAÇÃO EM PARTICULAR. Veja a
- * Licença Pública Geral GNU para maiores detalhes.
+ * Este framework Ã© distribuido na esperanÃ§a que possa ser  util, 
+ * mas SEM NENHUMA GARANTIA; sem uma garantia implicita de ADEQUAÃ‡Ã‚O a qualquer
+ * MERCADO ou APLICAÃ‡ÃƒO EM PARTICULAR. Veja a
+ * LicenÃ§a PÃºblica Geral GNU para maiores detalhes.
  *
- * Você deve ter recebido uma cópia da Licença Pública Geral Menor GNU
- * junto com este framework, se não, escreva para a Fundação do Software
+ * VocÃª deve ter recebido uma cÃ³pia da LicenÃ§a PÃºblica Geral Menor GNU
+ * junto com este framework, se nÃ£o, escreva para a FundaÃ§Ã£o do Software
  * Livre(FSF) Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  */
 package org.ecf4j.ecf.bematech;
@@ -49,7 +49,7 @@ import org.ecf4j.utils.strings.StringUtils;
 
 /**
  * Classe Abstrata para Bematech ECF
- * Implementa o protocolo 1 de comunicação da Bematech
+ * Implementa o protocolo 1 de comunicaï¿½ï¿½o da Bematech
  * @author Pablo Fassina e Agner Munhoz
  * @version 1.0.0
  * @extends EcfAbstract
@@ -152,7 +152,7 @@ public abstract class EcfBematechAbstract extends EcfAbstract {
 			}
 			st1 = retorno[len+1];
 			st2 = retorno[len+2];
-			// Verificação do st1
+			// VerificaÃ§Ã£o do st1
 			if (ByteUtils.getBit(st1, 7))
 				throw new EcfException(EcfException.ERRO_FIM_DO_PAPEL);
 			/*if (ByteUtils.getBit(st1, 6))
@@ -169,7 +169,7 @@ public abstract class EcfBematechAbstract extends EcfAbstract {
 				throw new EcfException(EcfException.ERRO_CUPOM_ABERTO);*/
 			if (ByteUtils.getBit(st1, 0))
 				throw new EcfException(EcfException.ERRO_QUANTIDADE_PARAMETROS_INVALIDO);
-			// Verificação do st2
+			// VerificaÃ§Ã£o do st2
 			if (ByteUtils.getBit(st2, 7))
 				throw new EcfException(EcfException.ERRO_TIPO_PARAMETRO_INVALIDO);
 			if (ByteUtils.getBit(st2, 6))
@@ -205,7 +205,7 @@ public abstract class EcfBematechAbstract extends EcfAbstract {
 	}
 	
 	//------------------------------------------------------------------------------------------------
-	//INFORMAÇÕES DO ECF
+	//INFORMAÃ‡Ã•ES DO ECF
 	@Override
 	public boolean isPoucoPapel() {
 		return (ByteUtils.getBit(st1, 6));
@@ -235,7 +235,7 @@ public abstract class EcfBematechAbstract extends EcfAbstract {
 		byte b = getRetorno(1)[0];
 		return 	ByteUtils.getBit(b, 5);
 	}
-	/* Método implementado nas classes específicas
+	/* MÃ©todo implementado nas classes especÃ­ficas
 	@Override
 	public void autenticarDocumento(int linhasAvanco, String linhaAdicional) 
 			throws CommException, EcfException {
@@ -273,7 +273,7 @@ public abstract class EcfBematechAbstract extends EcfAbstract {
 		return (b == 0x00);	
 	}
 	
-	/* Método implementado nas classes específicas
+	/* MÃ©todo implementado nas classes especÃ­ficas
 	@Override
 	public String getNumeroSerial() throws CommException, EcfException {
 		throw new EcfException(EcfException.ERRO_ABSTRACT);
@@ -359,14 +359,14 @@ public abstract class EcfBematechAbstract extends EcfAbstract {
 		executaComando(preparaComando(ByteUtils.newByteArray(22), "100"));
 		verificaRetorno();		
 	}
-	/* Método implementado nas classes específicas
+	/* MÃ©todo implementado nas classes especÃ­ficas
 	@Override
 	public EcfEstado getEstado() throws CommException, EcfException {
 		
 	
 	}*/
 
-	/* Método implementado nas classes específicas
+	/* MÃ©todo implementado nas classes especÃ­ficas
 	@Override
 	public BigDecimal getGrandeTotalReducaoZ() throws CommException,
 			EcfException {
@@ -374,42 +374,42 @@ public abstract class EcfBematechAbstract extends EcfAbstract {
 	}
 	*/
 	
-	/* Método implementado nas classes específicas
+	/* MÃ©todo implementado nas classes especÃ­ficas
 	@Override
 	public BigDecimal getAcrecimaoReducaoZ() throws CommException, EcfException {
 		throw new EcfException(EcfException.ERRO_ABSTRACT);
 	}
 	*/
 
-	/* Método implementado nas classes específicas
+	/* MÃ©todo implementado nas classes especÃ­ficas
 	@Override
 	public BigDecimal getCancelamentoReducaoZ() throws CommException, EcfException {
 		throw new EcfException(EcfException.ERRO_ABSTRACT);
 	}
 	*/
 
-	/* Método implementado nas classes específicas
+	/* MÃ©todo implementado nas classes especÃ­ficas
 	@Override
 	public BigDecimal getDescontoReducaoZ() throws CommException, EcfException  {
 		throw new EcfException(EcfException.ERRO_ABSTRACT);
 	}
 	*/
 	
-	/* Método implementado nas classes específicas
+	/* MÃ©todo implementado nas classes especÃ­ficas
 	@Override
 	public int getCOOReducaoZ() throws CommException, EcfException {
 		throw new EcfException(EcfException.ERRO_ABSTRACT);
 	}
 	*/
 
-	/* Método implementado nas classes específicas
+	/* MÃ©todo implementado nas classes especÃ­ficas
 	@Override
 	public BigDecimal getSangriaReducaoZ() throws CommException, EcfException {
 		throw new EcfException(EcfException.ERRO_ABSTRACT);
 	}
 	*/
 
-	/* Método implementado nas classes especifícas
+	/* MÃ©todo implementado nas classes especÃ­ficas
 	@Override
 	public BigDecimal getSuprimentoReducaoZ() throws CommException,
 			EcfException {
@@ -418,7 +418,7 @@ public abstract class EcfBematechAbstract extends EcfAbstract {
 	*/	
 	
 	
-	/* Método implementado nas classes específicas
+	/* MÃ©todo implementado nas classes especÃ­ficas
 	@Override
 	public BigDecimal getCancelamentoISS() throws CommException, EcfException {
 		executaComando(preparaComando(ByteUtils.newByteArray(87)));
@@ -428,7 +428,7 @@ public abstract class EcfBematechAbstract extends EcfAbstract {
 	}
 	*/
 	
-	/* Método implementado nas classes específicas
+	/* MÃ©todo implementado nas classes especÃ­ficas
 	@Override
 	public BigDecimal getCancelamentoICMS() throws CommException, EcfException {
 		throw new EcfException(EcfException.ERRO_ABSTRACT);
@@ -467,7 +467,7 @@ public abstract class EcfBematechAbstract extends EcfAbstract {
 		return BigDecimalUtils.bcdToMoeda(b);
 	}
 	
-	/* Método implementado nas classes específicas
+	/* MÃ©todo implementado nas classes especÃ­ficas
 	@Override
 	public BigDecimal getVendaBrutaReducaoZ() throws CommException, EcfException {
 		throw new EcfException(EcfException.ERRO_ABSTRACT);
@@ -500,7 +500,7 @@ public abstract class EcfBematechAbstract extends EcfAbstract {
 	}
 
 	//---------------------------------------------------------------------------------------------
-	//RELATÓRIOS
+	//RELATÃ“RIOS
 	@Override
 	public void leituraX() throws CommException, EcfException{
 		
@@ -534,7 +534,7 @@ public abstract class EcfBematechAbstract extends EcfAbstract {
 		return comm.readString((byte)0x03);
 	}
 	
-	/* Método implementado nas classes específicas
+	/* MÃ©todo implementado nas classes especÃ­ficas
 	@Override
 	public void leituraMemoriaFiscalDataSimplificado(Date dataInicial,
 			Date dataFinal) throws EcfException, CommException {
@@ -550,7 +550,7 @@ public abstract class EcfBematechAbstract extends EcfAbstract {
 		verificaRetorno();
 	}
 	
-	/* Método implementado nas classes específicas
+	/* MÃ©todo implementado nas classes especÃ­ficas
 	@Override
 	public String leituraMemoriaFiscalDataSimplificadoSerial(Date dataInicial,
 			Date dataFinal) throws EcfException, CommException {
@@ -567,7 +567,7 @@ public abstract class EcfBematechAbstract extends EcfAbstract {
 		verificaRetorno();
 		return comm.readString((byte)0x03);
 	}
-	/* Método implementado nas classes específicas
+	/* MÃ©todo implementado nas classes especÃ­ficas
 	@Override
 	public void leituraMemoriaFiscalReducaoSimplificado(int reducaoInicial,
 			int reducaoFinal) throws EcfException, CommException {
@@ -576,7 +576,7 @@ public abstract class EcfBematechAbstract extends EcfAbstract {
 	}
 	*/
 	
-	/* Método implementado nas classes específicas
+	/* MÃ©todo implementado nas classes especÃ­ficas
 	@Override
 	public String leituraMemoriaFiscalReducaoSimplificadoSerial(
 			int reducaoInicial, int reducaoFinal) throws EcfException,
@@ -615,14 +615,14 @@ public abstract class EcfBematechAbstract extends EcfAbstract {
 		
 	//CUPOM FISCAL
 	
-	/* Método implementado nas classes específicas
+	/* MÃ©todo implementado nas classes especÃ­ficas
 	@Override
 	public void abrirCupom(String cpfCnpj, String nome, String endereco) throws CommException, EcfException {
 		throw new EcfException(EcfException.ERRO_ABSTRACT);
 	}
 	*/
 	
-	/* Método implementado nas classes específicas
+	/* MÃ©todo implementado nas classes especÃ­ficas
 	@Override
 	public void venderItem(String codigo, String descricao, String codAliquota, 
 			BigDecimal quantidade, BigDecimal valorUnitario, String unidade, BigDecimal desconto,
@@ -631,7 +631,7 @@ public abstract class EcfBematechAbstract extends EcfAbstract {
 	}
 	*/
 	
-	/* Método implementado nas classes específicas
+	/* MÃ©todo implementado nas classes especÃ­ficas
 	@Override
 	public void venderItem(String codigo, String descricao, String codAliquota,
 			BigDecimal quantidade, BigDecimal valorUnitario, String unidade)
@@ -641,7 +641,7 @@ public abstract class EcfBematechAbstract extends EcfAbstract {
 	}
 	*/
 	
-	/* Método implementado nas classes específicas
+	/* MÃ©todo implementado nas classes especÃ­ficas
 	@Override
 	public void venderItemAcrescimo(String codigo, String descricao,
 			String codAliquota, BigDecimal quantidade,
@@ -652,7 +652,7 @@ public abstract class EcfBematechAbstract extends EcfAbstract {
 	}
 	*/
 
-	/* Método implementado nas classes específicas
+	/* MÃ©todo implementado nas classes especÃ­ficas
 	@Override
 	public void venderItemAcrescimoPerc(String codigo, String descricao,
 			String codAliquota, BigDecimal quantidade,
@@ -663,7 +663,7 @@ public abstract class EcfBematechAbstract extends EcfAbstract {
 	}
 	*/
 
-	/* Método implementado nas classes específicas
+	/* MÃ©todo implementado nas classes especÃ­ficas
 	@Override
 	public void venderItemDesconto(String codigo, String descricao,
 			String codAliquota, BigDecimal quantidade,
@@ -674,7 +674,7 @@ public abstract class EcfBematechAbstract extends EcfAbstract {
 	}
 	*/
 
-	/* Método implementado nas classes específicas
+	/* MÃ©todo implementado nas classes especÃ­ficas
 	@Override
 	public void venderItemDescontoPerc(String codigo, String descricao,
 			String codAliquota, BigDecimal quantidade,
@@ -763,8 +763,8 @@ public abstract class EcfBematechAbstract extends EcfAbstract {
 	
 	//------------------------------------------------------------------------------
 	
-	//CUPOM NÃO FISCAL
-	/* Método implementado nas classes especifícas
+	//CUPOM NÃƒO FISCAL
+	/* MÃ©todo implementado nas classes especÃ­ficas
 	@Override
 	public void abrirNaoFiscal(String cpfCnpj, String nomeConsumidor,
 			String enderecoConsumidor) throws CommException, EcfException {
@@ -793,21 +793,21 @@ public abstract class EcfBematechAbstract extends EcfAbstract {
 		verificaRetorno();
 	}
 	
-	/* Método implementado nas classes específicas
+	/* MÃ©todo implementado nas classes especÃ­ficas
 	@Override
 	public void registrarItemNaoFiscal(String codTotalizadorNaoFiscal, BigDecimal valor) throws CommException, EcfException {
 		throw new EcfException(EcfException.ERRO_ABSTRACT);
 	}
 	*/
 	
-	/* Método implementado nas classes específicas
+	/* MÃ©todo implementado nas classes especÃ­ficas
 	@Override
 	public void subtotalizarNaoFiscal(BigDecimal desconto, BigDecimal acrescimo, boolean descAcresPerc) throws CommException, EcfException {
 		throw new EcfException(EcfException.ERRO_ABSTRACT);
 	}
 	*/
 	
-	/* Método implementado nas classes específicas
+	/* MÃ©todo implementado nas classes especÃ­ficas
 	@Override
 	public void efetuarPagamentoNaoFiscal(String codFormaPagamento, 
 			BigDecimal valor, String observacao) throws CommException, EcfException {
@@ -815,14 +815,14 @@ public abstract class EcfBematechAbstract extends EcfAbstract {
 	}
 	*/
 	
-	/* Método implementado nas classes específicas
+	/* MÃ©todo implementado nas classes especÃ­ficas
 	@Override
 	public void fecharNaoFiscal() throws CommException, EcfException {
 		throw new EcfException(EcfException.ERRO_ABSTRACT);
 	}
 	*/
 	
-	/* Método implementado nas classes específicas
+	/* MÃ©todo implementado nas classes especÃ­ficas
 	@Override
 	public void cancelarNaoFiscal() throws CommException, EcfException {
 		throw new EcfException(EcfException.ERRO_ABSTRACT);
@@ -832,9 +832,9 @@ public abstract class EcfBematechAbstract extends EcfAbstract {
 	
 	
 	//-------------------------------------------------------------------------------
-	//CUPOM NÃO FISCAL (COMPROVANTE)	
+	//CUPOM NÃƒO FISCAL (COMPROVANTE)	
 	
-	/* Método implementado nas classes específicas
+	/* MÃ©todo implementado nas classes especÃ­ficas
 	@Override
 	public void abrirComprovante(String codFormaPagamento, BigDecimal valor,
 			int COO, String cpfConsumidor, String nomeConsumidor,
@@ -872,7 +872,7 @@ public abstract class EcfBematechAbstract extends EcfAbstract {
 		verificaRetorno();		
 	}
 	
-	/* Método implementado nas classes específicas
+	/* MÃ©todo implementado nas classes especÃ­ficas
 	@Override
 	public void estornarComprovante(String cpf, String nome, String endereco)
 			throws CommException, EcfException {
@@ -881,14 +881,14 @@ public abstract class EcfBematechAbstract extends EcfAbstract {
 	}
 	*/
 
-	/* Método implementado nas classes específicas
+	/* MÃ©todo implementado nas classes especÃ­ficas
 	@Override
 	public void imprimirSegundaVia() throws CommException, EcfException{
 		throw new EcfException(EcfException.ERRO_ABSTRACT);
 	}
 	*/
 	
-	/* Método implementado nas classes específicas
+	/* MÃ©todo implementado nas classes especÃ­ficas
 	@Override
 	public void reimprimirCupomNaoFiscal() throws CommException, EcfException{
 		throw new EcfException(EcfException.ERRO_ABSTRACT);
@@ -902,12 +902,12 @@ public abstract class EcfBematechAbstract extends EcfAbstract {
 	protected List<Aliquota> getAliquotas() throws CommException, EcfException{
 		List<Aliquota> result = new ArrayList<Aliquota>();
 
-		//Não tributados
+		//NÃ£o tributados
 		result.add(new Aliquota("F1", BigDecimalUtils.newMoeda(), getSubstituicao(), "P", "F"));
 		result.add(new Aliquota("I1", BigDecimalUtils.newMoeda(), getIsento(), "P", "I"));
 		result.add(new Aliquota("N1", BigDecimalUtils.newMoeda(), getNaoTributado(), "P", "N"));
 		
-		//FLAGS DE VINCULAÇÃO AO ISS
+		//FLAGS DE VINCULAÃ‡ÃƒO AO ISS
 		executaComando(preparaComando(ByteUtils.newByteArray(35, 29)));
 		byte[] flagsISS = getRetorno(2);
 		
@@ -950,7 +950,7 @@ public abstract class EcfBematechAbstract extends EcfAbstract {
 	//-----------------------------------------------------------------------------
 	
 	//FORMAS DE PAGAMENTO
-	/* Mátodo implementado nas classes específicas
+	/* MÃ©todo implementado nas classes especÃ­ficas
 	@Override
 	protected List<FormaPagamento> getFormasPagamento() throws CommException, EcfException {
 		throw new EcfException(EcfException.ERRO_ABSTRACT);
@@ -958,7 +958,7 @@ public abstract class EcfBematechAbstract extends EcfAbstract {
 	*/
 	
 	
-	/* Método implementado nas classes específicas
+	/* MÃ©todo implementado nas classes especÃ­ficas
 	@Override
 	protected void programarFormaPagamentoAbstract(String codigo, String descricao,
 			boolean permiteVincular) throws EcfException, CommException {
@@ -968,8 +968,8 @@ public abstract class EcfBematechAbstract extends EcfAbstract {
 		
 	//-----------------------------------------------------------------------------
 	
-	//TOTALIZADORES NÃO FISCAIS
-	/* Método implementado nas classes específicas
+	//TOTALIZADORES NÃƒO FISCAIS
+	/* MÃ©todo implementado nas classes especÃ­ficas
 	@Override
 	protected List<TotalizadorNaoFiscal> getTotalizadoresNaoFiscais() throws CommException, EcfException {
 		throw new EcfException(EcfException.ERRO_ABSTRACT);
@@ -989,14 +989,14 @@ public abstract class EcfBematechAbstract extends EcfAbstract {
 	
 	//-----------------------------------------------------------------------------
 	
-	/* Método implementado ans classes especifícas
+	/* MÃ©todo implementado nas classes especÃ­ficas
 	@Override
 	public void cancelarImpressaoCheque() throws CommException, EcfException{
 		throw new EcfException(EcfException.ERRO_ABSTRACT);
 	}
 	*/
 	
-	/* Método implementado nas classes especifícas
+	/* MÃ©todo implementado nas classes especÃ­ficas
 	@Override
 	public void imprimirCheque(String banco, BigDecimal valor, String favorecido,
 			String cidade, Date data, String observacao) throws CommException, EcfException{
@@ -1004,7 +1004,7 @@ public abstract class EcfBematechAbstract extends EcfAbstract {
 	}
 	*/
 
-	/* Método implementaod nas classes especifícas
+	/* MÃ©todo implementado nas classes especÃ­ficas
 	@Override
 	public boolean isChequePronto() throws CommException, EcfException{
 		throw new EcfException(EcfException.ERRO_ABSTRACT);
