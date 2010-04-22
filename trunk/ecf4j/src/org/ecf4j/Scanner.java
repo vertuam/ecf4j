@@ -166,7 +166,7 @@ public class Scanner {
 	}
 	
 	/**
-	 * Método passa o cédigo capturado pelo scanner para o ScannerListener
+	 * Método passa o código capturado pelo scanner para o ScannerListener
 	 * @param codigo <i>String</i>
 	 */
 	private synchronized void notifyScannerListeners(String codigo){
