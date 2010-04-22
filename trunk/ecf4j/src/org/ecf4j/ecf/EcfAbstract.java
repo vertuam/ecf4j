@@ -1007,6 +1007,7 @@ public abstract class EcfAbstract extends CommEquipto {
 		formasPagamento.clear();
 		formasPagamento = getFormasPagamento();
 	}
+	
 	/**
 	 * Método abstrato carrega formas de pagemento para uma lista
 	 * @return Lista de formas de pagamento
@@ -1034,6 +1035,7 @@ public abstract class EcfAbstract extends CommEquipto {
 			formasPagamento.add(new FormaPagamento(codigo, descricao, permiteVincular, BigDecimalUtils.newMoeda()));
 		}
 	}
+	
 	/**
 	 * Método abstrato programa Formas de Pagamento
 	 * @param codigo <i>String</i>
@@ -1092,6 +1094,7 @@ public abstract class EcfAbstract extends CommEquipto {
 		totalizadoresNaoFiscais.clear();
 		totalizadoresNaoFiscais = getTotalizadoresNaoFiscais();
 	}
+	
 	/**
 	 * Método abstrato carrega os totalizadore não fiscal em uma lista
 	 * @return lista de totalizadores não fiscal
@@ -1113,6 +1116,7 @@ public abstract class EcfAbstract extends CommEquipto {
 		programarTotalizadorNaoFiscalAbstract(codigo, descricao);
 		carregarTotalizadoresNaoFiscais();		
 	}
+	
 	/**
 	 * Método abstrato programa totalizado não fiscal no ECF
 	 * @param codigo <i>String</i>
@@ -1160,6 +1164,7 @@ public abstract class EcfAbstract extends CommEquipto {
 	 * @throws EcfException Exceção do ECF
 	 */
 	public abstract void programarMoedaSingular(String nome) throws CommException, EcfException;
+	
 	/**
 	 * Método abstrato programa no ECF o nome da moeda no plural
 	 * @param nome <i>String</i>
@@ -1167,6 +1172,7 @@ public abstract class EcfAbstract extends CommEquipto {
 	 * @throws EcfException Exceção do ECF
 	 */
 	public abstract void programarMoedaPlural(String nome) throws CommException, EcfException;
+	
 	/**
 	 * Método abstrato imprime cheques no ECF de acordo com os modelos dos banco 
 	 * @param banco <i>String</i>
@@ -1180,12 +1186,14 @@ public abstract class EcfAbstract extends CommEquipto {
 	 */
 	public abstract void imprimirCheque(String banco, BigDecimal valor, String favorecido, 
 			String cidade, Date data, String observacao) throws CommException, EcfException;
+	
 	/**
 	 * Método abstrato cancela a impressão no cheque. Esse método só será executado se o ECF estiver aguardando o Cheque
 	 * @throws CommException Exceção de comunicação
 	 * @throws EcfException Exceção do ECF
 	 */
 	public abstract void cancelarImpressaoCheque() throws CommException, EcfException;
+	
 	/**
 	 * Método abstrato verifica se o ECF está aguardando a colocação do cheque para impressão
 	 * @return boolean
@@ -1195,6 +1203,7 @@ public abstract class EcfAbstract extends CommEquipto {
 	 * @throws EcfException Exceção do ECF
 	 */
 	public abstract boolean isAguardandoCheque() throws CommException, EcfException;
+	
 	/**
 	 * Método abstrato verifica se o ECF está imprimindo cheque
 	 * @return boolean
@@ -1212,6 +1221,7 @@ public abstract class EcfAbstract extends CommEquipto {
 	 * @throws EcfException Exceção do ECF
 	 */
 	public abstract void pularLinhas(int qtdeLinhas) throws CommException, EcfException;
+	
 	/**
 	 * Método abstrato faz com que o ECF corte o papel de impressão
 	 * @param corteParcial <i>boolean</i>
@@ -1219,6 +1229,7 @@ public abstract class EcfAbstract extends CommEquipto {
 	 * @throws EcfException Exceção do ECF
 	 */
 	public abstract void cortarPapel(boolean corteParcial) throws CommException, EcfException;
+	
 	/**
 	 * Método abstrato Carrega os layouts de cheque em uma lista
 	 * @return lista de Layouts de cheque
