@@ -91,7 +91,7 @@ public class Main {
 			System.out.println(s);
 			System.out.println("modelo: ");			
 			modelo = readString();
-			System.out.println("Informe a porta utilizada (Ex. Win: COM1, Ex. Linux: \\dev\\ttyS0)");
+			System.out.println("Informe a porta utilizada (Ex. Win: COM1, Ex. Linux: /dev/ttyS0)");
 			System.out.println("porta: ");			
 			porta = readString();
 			// Inicialiar comunicação com o Ecf
@@ -205,7 +205,7 @@ public class Main {
 			System.out.println(s);
 			System.out.println("modelo: ");			
 			modelo = readString();
-			System.out.println("Informe a porta utilizada (Ex. Win: COM1, Ex. Linux: \\dev\\ttyS0)");
+			System.out.println("Informe a porta utilizada (Ex. Win: COM1, Ex. Linux: /dev/ttyS0)");
 			System.out.println("porta: ");			
 			porta = readString();
 			// Inicialiar comunicação com o Scanner
@@ -268,7 +268,7 @@ public class Main {
 			System.out.println(s);
 			System.out.println("modelo: ");			
 			modelo = readString();
-			System.out.println("Informe a porta utilizada (Ex. Win: COM1, Ex. Linux: \\dev\\ttyS0)");
+			System.out.println("Informe a porta utilizada (Ex. Win: COM1, Ex. Linux: /dev/ttyS0)");
 			System.out.println("porta: ");			
 			porta = readString();
 			// Inicialiar comunicação com o Balança
