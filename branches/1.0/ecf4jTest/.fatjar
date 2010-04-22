@@ -1,0 +1,14 @@
+#Fat Jar Configuration File
+#Thu Apr 22 14:58:41 BRT 2010
+onejar.license.required=true
+manifest.classpath=
+manifest.removesigners=true
+onejar.checkbox=false
+jarname=ecf4jTest.jar
+manifest.mergeall=true
+manifest.mainclass=org.ecf4jtest.Main
+manifest.file=<createnew>
+jarname.isextern=false
+onejar.expand=
+excludes=
+includes=
