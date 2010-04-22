@@ -1,6 +1,7 @@
-#Wed Apr 14 10:03:31 BRT 2010
+#Thu Apr 22 16:49:23 BRT 2010
 eclipse.preferences.version=1
 encoding//src/messages.properties=UTF-8
 encoding//src/org/ecf4j/balanca/exceptions/BalancaInativaException.java=UTF-8
 encoding//src/org/ecf4j/utils/comm/exceptions/CommException.java=UTF-8
 encoding/README=UTF-8
+encoding/doc=UTF-8

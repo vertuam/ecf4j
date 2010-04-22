@@ -43,30 +43,57 @@ public class CupomConfig {
 	private List<LinhaFormatada> rodape = new ArrayList<LinhaFormatada>();
 	private int linhasAvanco = 9;
 
+	/**
+	 * Método busca cabeçalho formatado de comprovantes sem valor fiscal
+	 * @return cabeçalho
+	 */
 	public List<LinhaFormatada> getCabecalho() {
 		return cabecalho;
 	}
 
+	/**
+	 * Método seta cabeçalho formatado
+	 * @param cabecalho <i>List</i>
+	 */
 	public void setCabecalho(List<LinhaFormatada> cabecalho) {
 		this.cabecalho = cabecalho;
 	}
 
+	/**
+	 * Método busca rodape formatado de comprovantes sem valor fiscal 
+	 * @return Rodape
+	 */
 	public List<LinhaFormatada> getRodape() {
 		return rodape;
 	}
 
+	/**
+	 * Método seta rodape formatado
+	 * @param rodape <i>List</i>
+	 */
 	public void setRodape(List<LinhaFormatada> rodape) {
 		this.rodape = rodape;
 	}
 
+	/**
+	 * Método busca a quantidade de linhas a se avançar ao terminar a impressão do comprovante
+	 * @return Número de linhas a se avançar após o termino da impressão
+	 */
 	public int getLinhasAvanco() {
 		return linhasAvanco;
 	}
 
+	/**
+	 * Método seta o número de linhas a avançar após imprimir um comprovante não fiscal
+	 * @param linhasAvanco <i>int</i>
+	 */
 	public void setLinhasAvanco(int linhasAvanco) {
 		this.linhasAvanco = linhasAvanco;
 	}
 
+	/**
+	 * Método cria configuração default para cabeçalho e rodape
+	 */
 	public void initDefaultValues(){
 		cabecalho.clear();
 		rodape.clear();

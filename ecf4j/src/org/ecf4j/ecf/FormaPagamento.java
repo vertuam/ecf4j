@@ -45,40 +45,81 @@ public class FormaPagamento {
 	private boolean permiteVincular;
 	private BigDecimal total = BigDecimalUtils.newMoeda();
 	
+	/**
+	 * Metodo construtor da classe FormaPagamento
+	 * @param codigo <i>String</i>
+	 * @param descricao <i>String</i>
+	 * @param permiteVincular <i>boolean</i>
+	 * @param valor <i>BigDecimal</i>
+	 */
 	public FormaPagamento(String codigo, String descricao, boolean permiteVincular, BigDecimal valor){
 		this.codigo = codigo;
 		this.descricao = descricao;
 		this.permiteVincular = permiteVincular;
 	}
 
+	/**
+	 * Método busca código da forma de pagamento
+	 * @return Código de Forma de Pagamento
+	 */
 	public String getCodigo() {
 		return codigo;
 	}
 
+	/**
+	 * Método seta uma valor para o código da forma de pagamento
+	 * @param codigo <i>String</i>
+	 */
 	public void setCodigo(String codigo) {
 		this.codigo = codigo;
 	}
 
+	/**
+	 * Método busca descrição de forma de pagamento
+	 * @return Decrição de Formade Pagamento
+	 */
 	public String getDescricao() {
 		return descricao;
 	}
 
+	/**
+	 * Método seta uma descrição para a forma de pagamento
+	 * @param descricao <i>String</i>
+	 */
 	public void setDescricao(String descricao) {
 		this.descricao = descricao;
 	}
 
+	/**
+	 * Método retorna um boolean indicando se a forma de pagamento permite vincular cupom 
+	 * @return boolean
+	 * <li> True - Caso permita vincular cupom
+	 * <li> False - Caso não permita vincular cupom
+	 */
 	public boolean getpermiteVincular() {
 		return permiteVincular;
 	}
 
-	public void setpermiteVincular(boolean permiteVincular) {
+	/**
+	 * Métod seta se é permitido vincular cupom  para determinada forma de pagamento
+	 * @param permiteVincular <i>boolean</i>
+	 */
+	public void setPermiteVincular(boolean permiteVincular) {
 		this.permiteVincular = permiteVincular;
 	}
 
+	/**
+	 * Método busca valor total para determinada forma de pagamento
+	 * @return Valor vendido para determinada forma de pagamento
+	 */
 	public BigDecimal getTotal() {
 		return total;
 	}
 
+	/**
+	 * Método seta valor total vendido para determinada forma de pagamento
+	 * @param total <i>BigDecimal</i>
+	 */
 	public void setTotal(BigDecimal total) {
 		this.total = total;
 	}

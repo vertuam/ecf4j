@@ -44,6 +44,13 @@ public class TotalizadorNaoFiscal {
 	private BigDecimal valor;
 	private String contador;
 	
+	/**
+	 * Método construtor ca classe TotalizadorNaoFiscal
+	 * @param codigo <i>String</i>
+	 * @param descricao <i>String</i>
+	 * @param valor <i>BigDecimal</i>
+	 * @param contador <i>String</i>
+	 */
 	public TotalizadorNaoFiscal(String codigo, String descricao, BigDecimal valor, String contador){
 		this.codigo = codigo;
 		this.descricao = descricao;
@@ -51,38 +58,66 @@ public class TotalizadorNaoFiscal {
 		this.contador = contador;
 	}
 
+	/**
+	 * Método busca código de totalizador não fiscal
+	 * @return Código
+	 */
 	public String getCodigo() {
 		return codigo;
 	}
 
-
+	/**
+	 * Método seta código para totalizador não fiscal
+	 * @param codigo <i>String</i>
+	 */
 	public void setCodigo(String codigo) {
 		this.codigo = codigo;
 	}
 
-
+	/**
+	 * Método valor do totalizador não fiscal
+	 * @return Valor do Totalizador
+	 */
 	public BigDecimal getValor() {
 		return valor;
 	}
 
-
+	/**
+	 * Método seta um valor para o totalizador não fiscal
+	 * @param valor <i>BigDecimal</i>
+	 */
 	public void setValor(BigDecimal valor) {
 		this.valor = valor;
 	}
 
-
+	/**
+	 * Método busca descrição de totalizador não fiscal
+	 * @return Descrição de totalizador
+	 */
 	public String getDescricao() {
 		return descricao;
 	}
 
+	/**
+	 * Método seta uma descrição para totalizador não fiscal
+	 * @param descricao <i>String</i>
+	 */
 	public void setDescricao(String descricao) {
 		this.descricao = descricao;
 	}
 
+	/**
+	 * Método retorna o contador do totalizador não fiscal
+	 * @return Contador
+	 */
 	public String getContador() {
 		return contador;
 	}
 
+	/**
+	 * Método seta um contador para o totalizador não fiscal
+	 * @param contador <i>String</i>
+	 */
 	public void setContador(String contador) {
 		this.contador = contador;
 	}

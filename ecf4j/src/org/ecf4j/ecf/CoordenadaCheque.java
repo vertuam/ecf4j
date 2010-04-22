@@ -38,27 +38,52 @@ public class CoordenadaCheque {
 	private String coordenada;
 	private int valor;
 	
+	/**
+	 * Método construtor da classe CoordenadaCheque
+	 */
 	public CoordenadaCheque(){
 		coordenada = "";
 		valor = 0;
 	}
 	
+	/**
+	 * Método construtor da classe CoordenarCheque <i>(com parâmetros)</i>
+	 * @param coordenada <i>String</i>
+	 * @param valor <i>int</i>
+	 */
 	public CoordenadaCheque(String coordenada, int valor){
 		this.coordenada = coordenada;
 		this.valor = valor;
 	}
 
+	/**
+	 * Método busca coordenada pra cheque
+	 * @return Coordenada
+	 */
 	public String getCoordenada() {
 		return coordenada;
 	}
 
+	/**
+	 * Método seta coordenada para cheque
+	 * @param coordenada <i>String</i>
+	 */
 	public void setCoordenada(String coordenada) {
 		this.coordenada = coordenada;
 	}
 
+	/**
+	 * Método busca o valor da coordenada co cheque
+	 * @return Valor de coordenada
+	 */
 	public int getValor() {
 		return valor;
 	}
+	
+	/**
+	 * Método seta um valor para a coordenada
+	 * @param valor <i>int</i>
+	 */
 	public void setValor(int valor) {
 		this.valor = valor;
 	}
