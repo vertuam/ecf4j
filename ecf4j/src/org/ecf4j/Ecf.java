@@ -831,6 +831,12 @@ public class Ecf {
 		}
 	}
 	
+	/**
+	 * Método busca no ECF o subtotal do último cupom
+	 * @return BigDecimal - Valor subtotal do último cupom
+	 * @throws CommException Exceção de comunicação
+	 * @throws EcfException Exceção do ECF
+	 */
 	public BigDecimal getSubtotalCupom() throws CommException, EcfException{
 		try {
 			return ecf.getSubtotalCupom();
@@ -839,6 +845,12 @@ public class Ecf {
 		}
 	}
 	
+	/**
+	 * Método retorna o valor pago no último cupom, sem o troco.
+	 * @return BigDecimal - Valor pago no último cupom
+	 * @throws CommException Exceção de comunicação
+	 * @throws EcfException Exceção do ECF
+	 */
 	public BigDecimal getValorPagoUltimoCupom() throws CommException, EcfException{
 		try {
 			return ecf.getValorPagoUltimoCupom();
@@ -1865,6 +1877,10 @@ public class Ecf {
 		}
 	}
 	
+	/**
+	 * Método verifica a quantidade de caracteres por linha no modelo de ECF  instanciado
+	 * @return número de colunas
+	 */
 	public Integer getNumColunas(){
 		return ecf.getNumColunas();
 	}

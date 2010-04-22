@@ -86,7 +86,7 @@ public class Balanca {
 	}
 	
 	/**
-	 * Método faz a leitura do peso enviado pela balança na norta serial
+	 * Método faz a leitura do peso enviado pela balança na porta serial
 	 * @return peso
 	 * @throws BalancaInativaException Exceção por balança inativa
 	 * @throws CommException Exceção de comunicação
@@ -101,7 +101,7 @@ public class Balanca {
 	}
 	
 	/**
-	 * Metodo de inicialização da balança
+	 * Método de inicialização da balança
 	 * @param codigo <i><String/i>
 	 * @param porta <i>String</i>
 	 * @param velocidade <i>Integer</i>

@@ -52,7 +52,7 @@ public class Ecnf {
 	 * @throws EcnfException Exceção do ECNF
 	 * @throws CommException Exceção do comunicação
 	 */
-	public void inicilizar(String codigo, String porta) throws EcnfException, CommException{
+	public void inicializar(String codigo, String porta) throws EcnfException, CommException{
 		try{
 			ecnf = Ecf4jFactory.createEcnf(codigo);
 			System.out.println(ecnf.modelo());
